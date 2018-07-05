@@ -1,0 +1,11 @@
+# Display.
+title: "Merely Useful"
+subtitle: "A Pragmatic Introduction to Research Computing and Data Analysis"
+author: "Greg Wilson"
+copyrightyear: "2018"
+
+# Code highlighting.
+highlighter: rouge
+
+# GitHub repository.
+repository: https://github.com/gvwilson/merely-useful/

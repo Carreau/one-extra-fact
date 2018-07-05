@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="author" content="{{site.author}}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>{{site.title}}{% if page.title %}: {{page.title}}{% else %}: {{site.subtitle}}{% endif %}</title>
+  </head>
+  <body>
+    <div class="container">
+      {% if page.title %}
+      <h1><a href="../">{{site.title}}</a>: {{page.title}}</h1>
+      {% else %}
+      <h1>{{site.title}}</h1>
+      <h3>{{site.subtitle}}</h3>
+      {% endif %}
+{{content}}
+    </div>
+  </body>
+</html>
