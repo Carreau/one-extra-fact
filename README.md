@@ -9,10 +9,13 @@ or for self-study by people who plan to enroll in a program like
 the [Insight Data Science][insight] Fellows Program.
 The course and related software freely available under [an open licence](./license/),
 and can be viewed on [the course's website][site].
+
 Questions, suggestions, and corrections are very welcome:
 please [file an issue][issues]
 in the course's [GitHub repository][repo]
 or [email the author directly][email].
+Please note that all contributors are required to abide by
+[our code of conduct](./conduct/).
 
 This course is inspired by:
 
@@ -23,9 +26,7 @@ This course is inspired by:
 - "[Ten Simple Rules for Making Research Software More Robust][robust]"
 - [Managing Research Software Projects][mrsp]
 
-Please see the course design below for work to date,
-and please note that all contributors are required to abide by
-[our code of conduct](./conduct/).
+Please see the course design notes below for an overview of current thinking,
 
 ----
 
@@ -37,8 +38,8 @@ while the second sketches its scope.
 Sections 3 and 4 then lay out what learners will do in what order,
 and the final section is the course's public face.
 
-This course uses Google Sheets, Unix, Python, and the Jupyter Notebook.
-Replacement modules using Excel, Windows, R, and RStudio will be designed separately.
+This course's primary tools are Google Sheets, Unix, Python, and the Jupyter Notebook.
+Parallel material using Excel, Windows, R, and RStudio will be designed separately.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -183,6 +184,11 @@ data using more complicated statistical methods.
    1. How can two different variables have the same name? (variable scope)
    1. Why did parallelizing my work make it slower? (I/O-bound computation)
    1. Why can't I install this software/log in to this computer? (permissions)
+
+Please click on the diagram below for a visualization of how learners' questions and our answers
+feed into lessons and topics in this course.
+
+<a href="./files/design/design.svg"><img src="./files/design/design.svg" width="100%" alt="Visualization of Course Design" /></a>
 
 <!-- -------------------------------------------------------------------------------- -->
 

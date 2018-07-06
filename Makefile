@@ -20,6 +20,12 @@ serve :
 site :
 	${JEKYLL} build
 
+## design   : make visualization of design.
+design : files/design/design.svg
+
+files/design/design.svg : files/design/design.gv
+	dot -Tsvg < $< > $@
+
 ## clean    : clean up junk files.
 clean :
 	@rm -rf ${DST_DIR}
