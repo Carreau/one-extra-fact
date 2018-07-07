@@ -1,0 +1,35 @@
+a {
+  color: #6060C0;
+}
+
+ol, ul {
+    padding-left: 1.2em;
+}
+
+dl {
+    padding-left: 1em;
+}
+
+dt {
+    clear: left;
+    float: left;
+    margin: 0 0.5em 0 -1.0em;
+}
+
+dt::before {
+    content: "";
+    display: block;
+    height: 0.25em;
+}
+
+dd::before {
+    content: "";
+    display: block;
+    height: 0.25em;
+}
+
+dd p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
