@@ -9,3 +9,31 @@ highlighter: rouge
 
 # GitHub repository.
 repository: https://github.com/gvwilson/merely-useful/
+
+# Pages that are stored in the root directory by convention.
+# Since they aren't part of a collection, their titles have
+# to be stored here explicitly.
+toplevel:
+- permalink: /license/
+  title: "License"
+- permalink: /conduct/
+  title: "Code of Conduct"
+- permalink: /contributing/
+  title: "Contributing"
+
+# Collections: one for lessons, one for extras.
+collections:
+  lessons:
+    output: true
+  extras:
+    output: true
+
+# Order for lessons.
+lessons:
+- /intro/
+
+# Order for extras.
+extras:
+- /reference/
+- /gloss/
+- /bib/
