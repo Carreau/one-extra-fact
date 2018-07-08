@@ -122,14 +122,17 @@ data using more complicated statistical methods.
    1. How can I keep track of what I've done and what I still need to do?
    1. How can I make my programs faster?
    1. How can I use clusters, the cloud, and other hardware?
-1. What concepts and techniques will students learn?
+1. What concepts and techniques will learners meet?
    1. Organize and manipulate tabular data in a spreadsheet.
    1. Manage and process files with the Unix shell.
    1. Process tabular data in Python.
-   1. Do iterative development.
+   1. Program defensively.
+   1. Hashing.
+   1. Iterative development.
    1. Embed documentation (docstrings).
    1. Name and organize the files in a project systematically.
    1. Track work with Git.
+   1. Use a branch-per-feature workflow.
    1. Make work reproducible using Make.
    1. Test Python programs with Pytest.
    1. Install and create packages with Pip.
@@ -140,10 +143,12 @@ data using more complicated statistical methods.
    1. Do statistics with Pandas.
    1. Get data using HTTP and REST APIs (or by scraping if need be).
    1. Connect to remote computers using SSH.
+   1. Parallelize a map-reduce problem using GNU Parallel.
    1. Do large-scale computing in the cloud.
    1. Share work using GitHub and Travis.
-   1. Create and publish a static website using Jekyll.
-1. What technologies, packages, or functions will students use?
+   1. Create and publish a static website using [Pelican][pelican].
+   1. Use ORCIDs and DOIs to identify authors, reports, and data.
+1. What technologies, packages, or functions will learners use?
    1. Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
    1. Unix shell: same topics as the [Software Carpentry lesson][swc-shell], with some [extra material][swc-shell-extra] on permissions.
    1. Python, NumPy, and Pandas: same topics as the [revised Software Carpentry lesson][swc-python], with extra material on writing command-line utilities.
@@ -155,8 +160,10 @@ data using more complicated statistical methods.
    1. Project organization: topics taken from [Managing Research Software Projects][mrsp] and [Noble's rules][noble].
    1. Packaging: new material (using Pip rather than Conda for simplicity).
    1. Working with remote data: new material on HTTP and the Python `requests` library (depends on understanding dictionaries to use JSON).
-   1. Publishing: new material on Markdown and Jekyll (rather than LaTeX).
+   1. Publishing: new material on [Markdown][markdown] and [Pelican][pelican].
    1. Altair: new material.
+   1. Continuous integration with [Travis-CI][travis]: new material.
+   1. High-throughput computing: new material on [GNU Parallel][gnu-parallel].
    1. Cloud computing: new material based on [HPC Novice][hpc-novice].
 1. What concepts will be introduced?
    1. Tidy data.
@@ -166,8 +173,10 @@ data using more complicated statistical methods.
    1. Embedded documentation for software.
    1. Relational data.
    1. Program decomposition and iterative development.
+   1. Vectorized (whole-array) operations.
    1. Commit (both version control and databases).
    1. Pull request.
+   1. Higher-order functions.
    1. Unit testing.
    1. Continuous integration.
    1. Task automation and workflow.
@@ -184,6 +193,20 @@ data using more complicated statistical methods.
    1. How can two different variables have the same name? (variable scope)
    1. Why did parallelizing my work make it slower? (I/O-bound computation)
    1. Why can't I install this software/log in to this computer? (permissions)
+1. What *won't* be covered?
+   1. Serving data: it would be cool to show learners how to build data services, but all we can do in a short lesson is show them how to create security holes.
+   1. Writing classes: we want to encourage a mostly-functional style of programming, and there isn't time to cover both higher-order functions and writing classes.
+   1. LaTeX: [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
+      - We use [Pelican][pelican] rather than [Jekyll][jekyll] because it's Python-based (we can build into `./docs` for publication).
+      - And because it parallels the R course using [R Markdown][r-markdown].
+   1. Conditionals and functions in the shell: learners will use Python for anything that complex.
+   1. Docker: too advanced for the intended audience.
+   1. GIS: not universally applicable.
+   1. Image processing: ditto.
+   1. Non-relational databases: there (still) isn't a clear leader, and relational databases allow us to introduce the key concepts.
+   1. Interactive web pages (except the interactivity provided by Altair): there isn't time to teach JavaScript.
+   1. Numerical or statistical methods: lots of high-quality courses already cover these topics.
+   1. High-performance computing: high throughput is more widely useful.
 
 Please click on the diagram below for a visualization of how learners' questions and our answers
 feed into lessons and topics in this course.
@@ -192,19 +215,23 @@ feed into lessons and topics in this course.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 3: What will the student do along the way?
+### Step 3: What will learners do along the way?
 
-- Generate CSV index of photo archive
-  - Variable scope
-  - Libraries
-  - Lists
-  - Functions
-  - File I/O
-- Scrape data from several sites and store in a database
-  - HTTP requests
-  - Regular expressions
-  - SQL
-- FIXME: more to come
+1. Reorganize a messy spreadsheet full of field data.
+1. Debug a stripped-down version of [`cvscut`][csvcut].
+1. Iteratively build a tool to identify duplicate datasets using `find` and hashing.
+1. Reorganize a small project to be consistent with [Noble's Rules][noble].
+1. Write tests to find problems with that small project's scripts.
+1. Package that project's scripts using Pip.
+1. Clean up a set of inconsistently-formatted text data files using regular expressions.
+1. Generate CSV index of a photo archive.
+1. Scrape data from a website and store it in a single relational database.
+1. Create and merge pull requests that have merge conflicts.
+1. Extend a Makefile to download data, merge it into existing data, and regenerate reports.
+1. Set up [Travis][travis] to regenerate that report every time new data is committed.
+1. Write a program to pass a set of pre-written tests.
+1. Set up an SSH keypair on GitHub.
+1. Write and run a map-reduce program using GNU Parallel.
 
 <!-- -------------------------------------------------------------------------------- -->
 
