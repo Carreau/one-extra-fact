@@ -1,52 +1,52 @@
-body {
-    padding-top: 10px;
-    padding-bottom: 10px;
+/* Remove Table of Contents sidebar when printing. */
+@media print {
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
-.container-left {
-    margin: 0;
-}
-
+/* Table of Contents sidebar. */
 div.toc {
-    padding-top: 10px;
+    padding-top: 0.5em;
     font-size: 80%;
     background-color: #f0f0f0;
 }
 
+/* Less space between ToC sidebar titles and bullet lists. */
 div.toc p ~ ul {
     margin-top: -1em;
 }
 
+/* Make links darker than Bootstrap default. */
 a {
   color: #6060C0;
 }
 
+/* Don't indent lists quite so much. */
 ol, ul {
     padding-left: 1.2em;
 }
 
+/* Put definition terms and definitions on the same line. */
 dl {
     padding-left: 1em;
 }
-
 dt {
     clear: left;
     float: left;
     margin: 0 0.5em 0 -1.0em;
 }
-
 dt::before {
     content: "";
     display: block;
     height: 0.25em;
 }
-
 dd::before {
     content: "";
     display: block;
     height: 0.25em;
 }
-
 dd p {
     display: inline;
     margin: 0;

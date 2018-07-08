@@ -9,12 +9,12 @@
     <title>{{site.title}}: {% if page.title %}{{page.title}}{% else %}{{site.subtitle}}{% endif %}</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 toc">
+        <div class="col-2 position-fixed d-print-none toc">
           {% include toc.html %}
         </div>
-        <div class="col-md-8">
+        <div class="col offset-2 main">
           {% if page.title %}
           <h3><a href="../">{{site.title}}</a></h3>
           <h1>{{page.title}}</h1>
