@@ -8,7 +8,7 @@ copyrightyear: "2018"
 highlighter: rouge
 
 # GitHub repository.
-repository: https://github.com/gvwilson/merely-useful/
+repository: gvwilson/merely-useful/
 
 # Pages that are stored in the root directory by convention.
 # Since they aren't part of a collection, their titles have
@@ -18,8 +18,6 @@ toplevel:
   title: "License"
 - permalink: /conduct/
   title: "Code of Conduct"
-- permalink: /contributing/
-  title: "Contributing"
 
 # Collections: one for lessons, one for extras.
 collections:

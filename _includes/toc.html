@@ -1,13 +1,15 @@
 <nav>
+  <p><strong><a href="{{site.github.url}}/">Home</a></strong></p>
   <ul>
-    <li><a href="'/'|relative_url">Home</a></li>
     {% for pg in site.toplevel %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
   </ul>
   <hr/>
+  <p><strong>Lessons</strong></p>
   <ul>
     {% for pg in site.lessons %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
   </ul>
   <hr/>
+  <p><strong>Extras</strong></p>
   <ul>
     {% for pg in site.extras %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
   </ul>
