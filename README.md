@@ -4,11 +4,16 @@ permalink: "/"
 ---
 This course is an introduction to research computing and data analysis
 for people with little or no previous training in either.
-It can be used either as the core of a one-semester course for graduate or undergraduate students,
+It can be used either as the core of a one-semester course for graduate students or senior undergraduates,
 or for self-study by people who plan to enroll in a program like
 the [Insight Data Science][insight] Fellows Program.
 The course and related software freely available under [an open licence](./license/),
 and can be viewed on [the course's website][site].
+
+This course assumes 30 contact hours
+(i.e., 3 hours/week for 12 weeks minus time for guest speakers, exam prep, and so on).
+The pace is based on what [Software Carpentry][swc] and [Data Carpentry][dc] routinely achieve in their two-day workshops,
+and on the University of Florida's experience with [Data Carpentry for Biologists][dcb].
 
 Questions, suggestions, and corrections are very welcome:
 please [file an issue][issues]
@@ -110,43 +115,30 @@ data using more complicated statistical methods.
 ### Step 2: Brainstorming
 
 1. What questions will this course answer?
-   1. How should I organize a research software project?
-   1. How should I manage my data, code, and reports?
-   1. How can I build more software in less time and with less effort?
-   1. How can I tell if my software is working correctly?
-   1. How can I visualize my work?
-   1. How can I get and use other people's data?
-   1. How can I make my work more reproducible?
-   1. How can I publish my work in less time and with less effort?
-   1. How can I use other people's software and make it easy for people to use mine?
-   1. How can I keep track of what I've done and what I still need to do?
-   1. How can I make my programs faster?
-   1. How can I use clusters, the cloud, and other hardware?
+   1. How can I manage data, code, and reports?
+   1. How can I build software faster?
+   1. How can I tell if my software is correct?
+   1. How can I make my work reproducible?
+   1. How can I share data and software with others?
 1. What concepts and techniques will learners meet?
    1. Organize and manipulate tabular data in a spreadsheet.
    1. Manage and process files with the Unix shell.
    1. Process tabular data in Python.
-   1. Program defensively.
-   1. Hashing.
-   1. Iterative development.
-   1. Embed documentation (docstrings).
+   1. Program iteratively and defensively.
+   1. Embed documentation in code.
    1. Name and organize the files in a project systematically.
-   1. Track work with Git.
-   1. Use a branch-per-feature workflow.
+   1. Track work with Git using a branching workflow.
+   1. Share work with GitHub using pull requests.
    1. Make work reproducible using Make.
-   1. Test Python programs with Pytest.
-   1. Install and create packages with Pip.
+   1. Write tests with PyTest.
+   1. Install packages with Pip.
    1. Do numerical computing with NumPy.
+   1. Do statistics with Pandas.
    1. Visualize data with Altair.
    1. Process text with regular expressions.
    1. Write queries in SQL.
-   1. Do statistics with Pandas.
-   1. Get data using HTTP and REST APIs (or by scraping if need be).
-   1. Connect to remote computers using SSH.
-   1. Parallelize a map-reduce problem using GNU Parallel.
-   1. Do large-scale computing in the cloud.
-   1. Share work using GitHub and Travis.
-   1. Create and publish a static website using [Pelican][pelican].
+   1. Fetch remote data using Requests.
+   1. Create and publish a static website using GitHub.
    1. Use ORCIDs and DOIs to identify authors, reports, and data.
 1. What technologies, packages, or functions will learners use?
    1. Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
@@ -156,35 +148,27 @@ data using more complicated statistical methods.
    1. Jupyter Notebook: introduced *after* learners are comfortable processing tabular data in Python.
    1. Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
    1. SQL: same topics as the [Software Carpentry lesson][swc-sql].
-   1. SSH: topics taken from [Software Carpentry's extras][swc-shell-extra].
    1. Project organization: topics taken from [Managing Research Software Projects][mrsp] and [Noble's rules][noble].
    1. Packaging: new material (using Pip rather than Conda for simplicity).
-   1. Working with remote data: new material on HTTP and the Python `requests` library (depends on understanding dictionaries to use JSON).
-   1. Publishing: new material on [Markdown][markdown] and [Pelican][pelican].
+   1. Working with remote data: new material on the Python `requests` library.
+   1. Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
    1. Altair: new material.
-   1. Continuous integration with [Travis-CI][travis]: new material.
-   1. High-throughput computing: new material on [GNU Parallel][gnu-parallel].
-   1. Cloud computing: new material based on [HPC Novice][hpc-novice].
 1. What concepts will be introduced?
    1. Tidy data.
-   1. Associative data (dictionaries, databases).
    1. Pipe and filter model.
    1. Version control repository.
    1. Embedded documentation for software.
-   1. Relational data.
+   1. Key/value data.
    1. Program decomposition and iterative development.
    1. Vectorized (whole-array) operations.
-   1. Commit (both version control and databases).
+   1. Commit.
+   1. Merge and merge conflict.
    1. Pull request.
-   1. Higher-order functions.
    1. Unit testing.
    1. Continuous integration.
-   1. Task automation and workflow.
-   1. Declarative computing (for database queries and visualization).
+   1. Task automation.
    1. Primary and foreign keys.
-   1. Public/private keys.
-   1. Data decomposition (for high-throughput computing).
-   1. Text processing for publication (rather than WYSIWYG).
+   1. Publication via text processing (rather than by using WYSIWYG tools).
 1. What misconceptions are expected?
    1. Why would I use the shell instead of Python? (duplication of utility between tools)
    1. How come I can't open my data files? (Path issues when using GUI tools)
@@ -194,6 +178,8 @@ data using more complicated statistical methods.
    1. Why did parallelizing my work make it slower? (I/O-bound computation)
    1. Why can't I install this software/log in to this computer? (permissions)
 1. What *won't* be covered?
+   1. Connecting to remote computers using SSH: no time.
+   1. Parallelizing map-reduce problem using GNU Parallel: too advanced.
    1. Serving data: it would be cool to show learners how to build data services, but all we can do in a short lesson is show them how to create security holes.
    1. Writing classes: we want to encourage a mostly-functional style of programming, and there isn't time to cover both higher-order functions and writing classes.
    1. LaTeX: [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
@@ -207,9 +193,9 @@ data using more complicated statistical methods.
    1. Interactive web pages (except the interactivity provided by Altair): there isn't time to teach JavaScript.
    1. Numerical or statistical methods: lots of high-quality courses already cover these topics.
    1. High-performance computing: high throughput is more widely useful.
+   1. Symbolic debuggers: unless the course uses a Python IDE.
 
-Please click on the diagram below for a visualization of how learners' questions and our answers
-feed into lessons and topics in this course.
+Please click on the diagram below for a visualization of the mental model we want to help learners construct.
 
 <a href="./files/design/design.svg"><img src="./files/design/design.svg" width="100%" alt="Visualization of Course Design" /></a>
 
@@ -219,19 +205,16 @@ feed into lessons and topics in this course.
 
 1. Reorganize a messy spreadsheet full of field data.
 1. Debug a stripped-down version of [`cvscut`][csvcut].
-1. Iteratively build a tool to identify duplicate datasets using `find` and hashing.
+1. Iteratively build a Python tool to identify duplicate datasets.
 1. Reorganize a small project to be consistent with [Noble's Rules][noble].
-1. Write tests to find problems with that small project's scripts.
 1. Package that project's scripts using Pip.
 1. Clean up a set of inconsistently-formatted text data files using regular expressions.
-1. Generate CSV index of a photo archive.
-1. Scrape data from a website and store it in a single relational database.
+1. Generate a CSV index of a photo archive.
+1. Fetch data from a website using a REST API.
 1. Create and merge pull requests that have merge conflicts.
 1. Extend a Makefile to download data, merge it into existing data, and regenerate reports.
-1. Set up [Travis][travis] to regenerate that report every time new data is committed.
 1. Write a program to pass a set of pre-written tests.
-1. Set up an SSH keypair on GitHub.
-1. Write and run a map-reduce program using GNU Parallel.
+1. Publish a single-page website for a project on GitHub.
 
 <!-- -------------------------------------------------------------------------------- -->
 

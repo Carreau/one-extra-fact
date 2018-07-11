@@ -14,6 +14,7 @@ definitions if that's done.
 [dc]: http://datacarpentry.org
 [dcb]: https://datacarpentry.org/semester-biology/
 [email]: mailto:gvwilson@third-bit.com?subject=Merely%20Useful
+[github-pages]: https://pages.github.com/
 [gnu-parallel]: https://www.gnu.org/software/parallel/
 [good]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
 [hpc-novice]: https://christinalk.github.io/hpc-novice-1/
