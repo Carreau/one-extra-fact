@@ -48,9 +48,9 @@ Parallel material using Excel, Windows, R, and RStudio will be designed separate
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 1: Who is this course for?
+## Step 1: Who is this course for?
 
-#### Bhadra
+### Bhadra
 
 Bhadra received a B.Sc. in biochemistry five years ago, and has worked
 since then for a small biotech firm.  She did a biostatistics course
@@ -68,7 +68,7 @@ additions and changes don't break existing features, and how to
 package her software so that her colleagues can install it and run it
 themselves.
 
-#### Jorge
+### Jorge
 
 Jorge just moved from Costa Rica to Canada to study agricultural
 economics.  Other than using Excel, Word, and the Internet, Jorge's
@@ -88,7 +88,7 @@ small research software project, how to fetch and process text, CSV,
 and JSON data, how to write basic SQL queries to get data from
 databases, and how to create simple exploratory visualizations.
 
-#### Mei
+### Mei
 
 Mei is a graduate student in chemistry. Her only programming
 experience is a general first-year introduction to computational
@@ -112,7 +112,7 @@ data using more complicated statistical methods.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 2: Brainstorming
+## Step 2: Brainstorming
 
 1. What questions will this course answer?
    1. How can I manage data, code, and reports?
@@ -195,13 +195,18 @@ data using more complicated statistical methods.
    1. High-performance computing: high throughput is more widely useful.
    1. Symbolic debuggers: unless the course uses a Python IDE.
 
-Please click on the diagram below for a visualization of the mental model we want to help learners construct.
+<!-- -------------------------------------------------------------------------------- -->
 
-<a href="./files/design/design.svg"><img src="./files/design/design.svg" width="100%" alt="Visualization of Course Design" /></a>
+## Step 3: What mental models will learners form?
+
+<figure>
+  <figcaption>Variables and Values</figcaption>
+  <img src="./files/design/variables-values.svg" alt="Variables and Values" />
+</figure>
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 3: What will learners do along the way?
+## Step 4: What will learners do along the way?
 
 1. Reorganize a messy spreadsheet full of field data.
 1. Debug a stripped-down version of [`cvscut`][csvcut].
@@ -218,15 +223,15 @@ Please click on the diagram below for a visualization of the mental model we wan
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 4: How are the concepts connected?
+## Step 5: How are the concepts connected?
 
 FIXME: lesson-by-lesson outline.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-### Step 5: Course overview
+## Step 6: Course overview
 
-#### Course Description
+### Course Description
 
 This course is an introduction to research computing and data analysis
 for people with little or no previous training in either.
@@ -234,7 +239,7 @@ It can be used either as the core of a one-semester for graduate or undergraduat
 or for self-study by people who are thinking about becoming data scientists
 and want a solid base to build on.
 
-#### Prerequisites
+### Prerequisites
 
 Learners will need:
 
@@ -243,7 +248,7 @@ Learners will need:
 - Python 3 (including the Jupyter Notebook).
 - Google and GitHub accounts.
 
-#### Other Resources
+### Other Resources
 
 - [Software Carpentry][swc]
 - [Data Carpentry][dc]
