@@ -9,7 +9,7 @@ definitions if that's done.
 {% endcomment %}
 [best]: http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745
 [covenant]: https://www.contributor-covenant.org
-[cvscut]: http://csvkit.readthedocs.io/en/1.0.3/scripts/csvcut.html
+[csvcut]: http://csvkit.readthedocs.io/en/1.0.3/scripts/csvcut.html
 [dc-sheets]: https://datacarpentry.org/spreadsheet-ecology-lesson/
 [dc]: http://datacarpentry.org
 [dcb]: https://datacarpentry.org/semester-biology/
