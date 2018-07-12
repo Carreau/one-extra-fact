@@ -28,6 +28,16 @@ ol, ul {
     padding-left: 1.2em;
 }
 
+/* Center figures. */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Put definition terms and definitions on the same line. */
 dl {
     padding-left: 1em;
