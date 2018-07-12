@@ -30,6 +30,8 @@ ol, ul {
 
 /* Center figures. */
 figure {
+    background-color: #f0f0f0;
+    padding: 2px;
     text-align: center;
 }
 
