@@ -209,6 +209,11 @@ data using more complicated statistical methods.
   <img src="./files/design/programs.svg" alt="Programs" />
 </figure>
 
+<figure>
+  <figcaption>Projects</figcaption>
+  <img src="./files/design/projects.svg" alt="Projects" />
+</figure>
+
 <!-- -------------------------------------------------------------------------------- -->
 
 ## Step 4: What will learners do along the way?
