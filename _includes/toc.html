@@ -1,16 +1,16 @@
 <nav>
-  <p><strong><a href="{{site.github.url}}/">Merely Useful</a></strong></p>
+  <p>{% if page.permalink == '/' %}<strong>{% endif %}<a href="{{'/'|relative_url}}">Merely Useful</a>{% if page.permalink == '/' %}</strong>{% endif %}</p>
   <ul>
-    {% for pg in site.toplevel %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
+    {% for pg in site.toplevel %}<li>{% if pg.permalink == page.permalink %}<strong>{% endif %}<a href="{{pg.permalink|relative_url}}">{{pg.title}}</a>{% if pg.permalink == page.permalink %}</strong>{% endif %}</li>{% endfor %}
   </ul>
   <hr/>
   <p><strong>Lessons</strong></p>
   <ul>
-    {% for pg in site.lessons %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
+    {% for pg in site.lessons %}<li>{% if pg.permalink == page.permalink %}<strong>{% endif %}<a href="{{pg.permalink|relative_url}}">{{pg.title}}</a>{% if pg.permalink == page.permalink %}</strong>{% endif %}</li>{% endfor %}
   </ul>
   <hr/>
   <p><strong>Extras</strong></p>
   <ul>
-    {% for pg in site.extras %}<li><a href="{{pg.permalink|relative_url}}">{{pg.title}}</a></li>{% endfor %}
+    {% for pg in site.extras %}<li>{% if pg.permalink == page.permalink %}<strong>{% endif %}<a href="{{pg.permalink|relative_url}}">{{pg.title}}</a>{% if pg.permalink == page.permalink %}</strong>{% endif %}</li>{% endfor %}
   </ul>
 </nav>
