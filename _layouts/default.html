@@ -16,26 +16,9 @@
         </div>
         <div class="col offset-2 main">
           <h1>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</h1>
-
-          {% if page.objectives %}
-          <div class="objectives">
-            <p><strong>Learning Objectives</strong></p>
-            <ul>
-              {% for obj in page.objectives %}<li>{{obj}}</li>{% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-
+          {% include listblock.html title="Learning Objectives" items=page.objectives %}
           {{content}}
-
-          {% if page.keypoints %}
-          <div class="keypoints">
-            <p><strong>Key Points</strong></p>
-            <ul>
-              {% for obj in page.keypoints %}<li>{{obj}}</li>{% endfor %}
-            </ul>
-          </div>
-          {% endif %}
+          {% include listblock.html title="Key Points" items=page.keypoints %}
         </div>
       </div>
     </div>
