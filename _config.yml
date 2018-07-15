@@ -26,12 +26,14 @@ collections:
   extras:
     output: true
 
-# Order for lessons.
-lessons:
-- /intro/
-
-# Order for extras.
-extras:
-- /reference/
-- /gloss/
-- /bib/
+# Order for Table of Contents.
+toc:
+  toplevel:
+  - /license/
+  - /conduct/
+  lessons:
+  - /intro/
+  extras:
+  - /bib/
+  - /gloss/
+  - /reference/
