@@ -199,6 +199,10 @@ data using more complicated statistical methods.
 
 ## Step 3: What mental models will learners form?
 
+These concept maps were drawn with the desktop edition of [draw.io](https://www.draw.io/).
+To modify them, edit the XML, then select all and export as SVG
+using "selection only" and "transparent background".
+
 <figure>
   <figcaption>Variables and Values</figcaption>
   <img src="./files/design/variables-values.svg" alt="Variables and Values" />
