@@ -1,5 +1,9 @@
 <nav>
-  <p>{% if page.permalink == '/' %}<strong>{% endif %}<a href="{{'/'|relative_url}}">{{site.title}}</a>{% if page.permalink == '/' %}</strong>{% endif %}</p>
+  <p>
+    {% if page.permalink == '/' %}<strong>{% endif %}
+    <a href="{{'/'|relative_url}}">{{site.title}}</a>
+    {% if page.permalink == '/' %}</strong>{% endif %}
+  </p>
   {% include toc-section.html title="" toc=site.toc.toplevel coll=site.toplevel %}
   <hr/>
   {% include toc-section.html title="Lessons" toc=site.toc.lessons coll=site.lessons %}
@@ -7,7 +11,11 @@
   {% include toc-section.html title="Extras" toc=site.toc.extras coll=site.extras %}
   <hr/>
   <p>
-    <a href="{{'/license/'|relative_url}}"><img src="{{'/files/cc-by.svg'|relative_url}}" alt="CC-BY License" /></a>
+    <a href="{{'/license/'|relative_url}}"><img src="{{'/files/cc-by.svg'|relative_url}}" alt="CC-BY License" width="80%" /></a>
+  </p>
+  <p>
+    <a href="mailto:{{site.email}}"><img src="{{'/files/email.svg'|relative_url}}" alt="Email" width="20%" /></a>
+    <a href="{{site.repo}}"><img src="{{'/files/github.svg'|relative_url}}" alt="GitHub" width="20%" /></a>
   </p>
   {% unless page.title %}
   <p>

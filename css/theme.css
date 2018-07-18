@@ -10,7 +10,7 @@
 
 /* Table of Contents sidebar. */
 div.toc {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 0.5em;
     font-size: 80%;
     background-color: {{site.background}};
@@ -34,6 +34,14 @@ div.listblock {
     padding-left: 0.5em;
     padding-top: 0.5em;
     margin-bottom: 1em;
+}
+
+/* Outlines for code samples. */
+pre.highlight {
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.5em;
+    border-color: {{site.background}};
 }
 
 /* Make links darker than Bootstrap default. */
