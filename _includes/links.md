@@ -13,13 +13,12 @@ definitions if that's done.
 [dc-sheets]: https://datacarpentry.org/spreadsheet-ecology-lesson/
 [dc]: http://datacarpentry.org
 [dcb]: https://datacarpentry.org/semester-biology/
-[email]: mailto:gvwilson@third-bit.com?subject=Merely%20Useful
+[draw-io]: https://www.draw.io/
 [github-pages]: https://pages.github.com/
 [gnu-parallel]: https://www.gnu.org/software/parallel/
 [good]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
 [hpc-novice]: https://christinalk.github.io/hpc-novice-1/
 [insight]: https://www.insightdatascience.com/
-[issues]: https://github.com/gvwilson/merely-useful/issues
 [jekyll]: https://jekyllrb.com/
 [lc]: https://librarycarpentry.org/
 [markdown]: https://github.github.com/gfm/
@@ -27,9 +26,7 @@ definitions if that's done.
 [noble]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [pelican]: http://docs.getpelican.com/
 [r-markdown]: https://rmarkdown.rstudio.com/
-[repo]: https://github.com/gvwilson/merely-useful/
 [robust]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412
-[site]: https://gvwilson.github.io/merely-useful/
 [swc-git]: http://swcarpentry.github.io/git-novice/
 [swc-python]: http://swcarpentry.github.io/python-novice-gapminder/
 [swc-shell-extra]: http://swcarpentry.github.io/shell-extras/

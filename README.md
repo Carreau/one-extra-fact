@@ -8,7 +8,7 @@ It can be used either as the core of a one-semester course for graduate students
 or for self-study by people who plan to enroll in a program like
 the [Insight Data Science][insight] Fellows Program.
 The course and related software freely available under [an open licence](./license/),
-and can be viewed on [the course's website][site].
+and can be viewed on [the course's website]({{site.website}}).
 
 This course assumes 30 contact hours
 (i.e., 3 hours/week for 12 weeks minus time for guest speakers, exam prep, and so on).
@@ -16,9 +16,9 @@ The pace is based on what [Software Carpentry][swc] and [Data Carpentry][dc] rou
 and on the University of Florida's experience with [Data Carpentry for Biologists][dcb].
 
 Questions, suggestions, and corrections are very welcome:
-please [file an issue][issues]
-in the course's [GitHub repository][repo]
-or [email the author directly][email].
+please [file an issue]({{site.repo}}/issues)
+in the course's [GitHub repository]({{site.repo}})
+or [email the author directly](mailto:{{site.email}}).
 Please note that all contributors are required to abide by
 [our code of conduct](./conduct/).
 
@@ -199,7 +199,7 @@ data using more complicated statistical methods.
 
 ## Step 3: What mental models will learners form?
 
-These concept maps were drawn with the desktop edition of [draw.io](https://www.draw.io/).
+These concept maps were drawn with the desktop edition of [draw.io][draw-io].
 To modify them, edit the XML, then select all and export as SVG
 using "selection only" and "transparent background".
 

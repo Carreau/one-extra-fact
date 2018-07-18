@@ -3,12 +3,12 @@ title: "Merely Useful"
 subtitle: "A Pragmatic Introduction to Research Computing"
 author: "Greg Wilson"
 copyrightyear: "2018"
+repo: "https://github.com/gvwilson/merely-useful/"
+email: "gvwilson@third-bit.com"
+website: "https://gvwilson.github.io/merely-useful/"
 
 # Code highlighting.
 highlighter: rouge
-
-# GitHub repository.
-repository: gvwilson/merely-useful/
 
 # Pages that are stored in the root directory by convention.
 # Since they aren't part of a collection, their titles have

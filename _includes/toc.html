@@ -9,7 +9,9 @@
   <p>
     <a href="{{'/license/'|relative_url}}"><img src="{{'/files/cc-by.svg'|relative_url}}" alt="CC-BY License" /></a>
   </p>
+  {% unless page.title %}
   <p>
     <em>Generated {{site.time|date: '%Y-%m-%d'}}.</em>
   </p>
+  {% endunless %}
 </nav>
