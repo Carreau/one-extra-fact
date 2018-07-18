@@ -7,6 +7,9 @@ repo: "https://github.com/gvwilson/merely-useful/"
 email: "gvwilson@third-bit.com"
 website: "https://gvwilson.github.io/merely-useful/"
 
+# Theme color.
+background: "#e0f0f0"
+
 # Code highlighting.
 highlighter: rouge
 
