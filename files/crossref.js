@@ -1,0 +1,1 @@
+let CROSSREF = {"s:conclusion": {"number": "2", "slug": "conclusion"}, "s:license": {"number": "A", "slug": "license"}, "s:citation": {"number": "C", "slug": "citation"}, "s:bib": {"number": "D", "slug": "bib"}, "s:intro": {"number": "1", "slug": "intro"}, "s:conduct": {"number": "B", "slug": "conduct"}, "s:gloss": {"number": "E", "slug": "gloss"}};

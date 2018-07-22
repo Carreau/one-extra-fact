@@ -69,14 +69,25 @@ figcaption {
     font-weight: bold;
 }
 
-/* Put definition terms and definitions on the same line. */
+/* Mark quotations. */
+blockquote {
+    border-left: solid 2px {{site.background}};
+    padding-left: 0.5em;
+}
+
+/* Glossary references are in bold. */
+.glossref {
+    font-weight: bold;
+}
+
+/* Closing up definition lists. */
 dl {
     padding-left: 1em;
 }
 dt {
     clear: left;
     float: left;
-    margin: 0 0.5em 0 -1.0em;
+    margin: 0 0.5em 0 0;
 }
 dt::before {
     content: "";
@@ -92,4 +103,7 @@ dd p {
     display: inline;
     margin: 0;
     padding: 0;
+}
+dt {
+    margin-left: -1em;
 }
