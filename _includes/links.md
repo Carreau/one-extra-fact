@@ -8,6 +8,7 @@ definitions if that's done.
 
 {% endcomment %}
 [best]: http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745
+[computational-competence]: https://software-carpentry.org/blog/2013/07/computational-competence-for-biologists.html
 [covenant]: https://www.contributor-covenant.org
 [csvcut]: http://csvkit.readthedocs.io/en/1.0.3/scripts/csvcut.html
 [dc-sheets]: https://datacarpentry.org/spreadsheet-ecology-lesson/
@@ -22,10 +23,12 @@ definitions if that's done.
 [jekyll]: https://jekyllrb.com/
 [lc]: https://librarycarpentry.org/
 [markdown]: https://github.github.com/gfm/
+[minimal-manual]: http://www.instructionaldesign.org/theories/minimalism.html
 [mrsp]: https://swcarpentry.github.io/managing-research-software-projects/
 [noble]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [pelican]: http://docs.getpelican.com/
 [r-markdown]: https://rmarkdown.rstudio.com/
+[reproducible-research]: http://ivory.idyll.org/blog/2016-what-is-open-science.html
 [robust]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412
 [swc-git]: http://swcarpentry.github.io/git-novice/
 [swc-python]: http://swcarpentry.github.io/python-novice-gapminder/
@@ -35,4 +38,6 @@ definitions if that's done.
 [swc]: https://software-carpentry.org/
 [t3]: http://teachtogether.tech
 [tidyverse]: https://www.tidyverse.org/learn/
+[tldr]: https://tldr.ostera.io/
 [travis]: https://travis-ci.org/
+[what-is-open-science]: http://ivory.idyll.org/blog/2016-what-is-open-science.html

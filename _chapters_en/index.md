@@ -5,12 +5,21 @@ permalink: "/en/"
 root: true
 redirect_from: "/"
 ---
+
+> This design template is taken from *[Teaching Tech Together][t3]*.
+> The first section explains who this course is for,
+> while the second sketches its scope.
+> Sections 3 and 4 then lay out what learners will do in what order,
+> and the final section is the course's public face.
+> See `misc/course-outline.md` for material that was designed
+> but *isn't* being included in the course.
+
 This course is an introduction to research computing and data analysis
 for people with little or no previous training in either.
 It can be used either as the core of a one-semester course for graduate students or senior undergraduates,
 or for self-study by people who plan to enroll in a program like
 the [Insight Data Science][insight] Fellows Program.
-The course and related software freely available under [an open licence](./license/),
+The course and related software freely available under an open license ([s:license](#APPENDIX))
 and can be viewed on [the course's website]({{site.website}}).
 
 This course assumes 30 contact hours
@@ -23,7 +32,7 @@ please [file an issue]({{site.repo}}/issues)
 in the course's [GitHub repository]({{site.repo}})
 or [email the author directly](mailto:{{site.email}}).
 Please note that all contributors are required to abide by
-[our code of conduct](./conduct/).
+our code of conduct ((s:joining)[#APPENDIX]).
 
 This course is inspired by:
 
@@ -33,21 +42,6 @@ This course is inspired by:
 - "[Good Enough Practices in Scientific Computing][good]"
 - "[Ten Simple Rules for Making Research Software More Robust][robust]"
 - [Managing Research Software Projects][mrsp]
-
-Please see the course design notes below for an overview of current thinking,
-
-----
-
-## Design
-
-This design template is taken from *[Teaching Tech Together][t3]*.
-The first section explains who this course is for,
-while the second sketches its scope.
-Sections 3 and 4 then lay out what learners will do in what order,
-and the final section is the course's public face.
-
-This course's primary tools are Google Sheets, Unix, Python, and the Jupyter Notebook.
-Parallel material using Excel, Windows, R, and RStudio will be designed separately.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -88,8 +82,7 @@ even precisely what kind of filtering and analysis each does.
 
 This course will teach Jorge how to manage the code and data used in a
 small research software project, how to fetch and process text, CSV,
-and JSON data, how to write basic SQL queries to get data from
-databases, and how to create simple exploratory visualizations.
+and JSON data, and how to create simple exploratory visualizations.
 
 ### Mei
 
@@ -118,85 +111,97 @@ data using more complicated statistical methods.
 ## Step 2: Brainstorming
 
 1. What questions will this course answer?
-   1. How can I manage data, code, and reports?
-   1. How can I build software faster?
-   1. How can I tell if my software is correct?
-   1. How can I make my work reproducible?
-   1. How can I share data and software with others?
+   - How can I manage data, code, and reports?
+   - How can I build software faster?
+   - How can I tell if my software is correct?
+   - How can I make my work reproducible?
+   - How can I share data and software with others?
 1. What concepts and techniques will learners meet?
-   1. Organize and manipulate tabular data in a spreadsheet.
-   1. Manage and process files with the Unix shell.
-   1. Process tabular data in Python.
-   1. Program iteratively and defensively.
-   1. Embed documentation in code.
-   1. Name and organize the files in a project systematically.
-   1. Track work with Git using a branching workflow.
-   1. Share work with GitHub using pull requests.
-   1. Make work reproducible using Make.
-   1. Write tests with PyTest.
-   1. Install packages with Pip.
-   1. Do numerical computing with NumPy.
-   1. Do statistics with Pandas.
-   1. Visualize data with Altair.
-   1. Process text with regular expressions.
-   1. Write queries in SQL.
-   1. Fetch remote data using Requests.
-   1. Create and publish a static website using GitHub.
-   1. Use ORCIDs and DOIs to identify authors, reports, and data.
+   - Organize and manipulate tabular data in a spreadsheet.
+   - Manage and process files with the Unix shell.
+   - Process tabular data in Python.
+   - Program iteratively and defensively.
+   - Embed documentation in code.
+   - Name and organize the files in a project systematically.
+   - Track work with Git using a branching workflow.
+   - Share work with GitHub using pull requests.
+   - Make work reproducible using Make.
+   - Write tests with PyTest.
+   - Install packages with Pip.
+   - Do numerical computing with NumPy.
+   - Do statistics with Pandas.
+   - Visualize data with Altair.
+   - Process text with regular expressions.
+   - Fetch remote data using Requests.
+   - Create and publish a static website using GitHub Pages.
+   - Use ORCIDs and DOIs to identify authors, reports, and data.
 1. What technologies, packages, or functions will learners use?
-   1. Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
-   1. Unix shell: same topics as the [Software Carpentry lesson][swc-shell], with some [extra material][swc-shell-extra] on permissions.
-   1. Python, NumPy, and Pandas: same topics as the [revised Software Carpentry lesson][swc-python], with extra material on writing command-line utilities.
-   1. Pytest: new material.
-   1. Jupyter Notebook: introduced *after* learners are comfortable processing tabular data in Python.
-   1. Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
-   1. SQL: same topics as the [Software Carpentry lesson][swc-sql].
-   1. Project organization: topics taken from [Managing Research Software Projects][mrsp] and [Noble's rules][noble].
-   1. Packaging: new material (using Pip rather than Conda for simplicity).
-   1. Working with remote data: new material on the Python `requests` library.
-   1. Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
-   1. Altair: new material.
+   - Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
+   - Unix shell: same topics as the [Software Carpentry lesson][swc-shell], with some [extra material][swc-shell-extra] on permissions.
+   - Python, NumPy, and Pandas: same topics as the [revised Software Carpentry lesson][swc-python], with extra material on writing command-line utilities.
+   - Pytest: new material.
+   - Jupyter Notebook: introduced *after* learners are comfortable processing tabular data in Python.
+   - Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
+   - Project organization: topics taken from [Managing Research Software Projects][mrsp] and [Noble's rules][noble].
+   - Packaging: new material (using Pip rather than Conda for simplicity).
+   - Working with remote data: new material on the Python `requests` library.
+   - Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
+   - Altair: new material.
 1. What concepts will be introduced?
-   1. Tidy data.
-   1. Pipe and filter model.
-   1. Version control repository.
-   1. Embedded documentation for software.
-   1. Key/value data.
-   1. Program decomposition and iterative development.
-   1. Vectorized (whole-array) operations.
-   1. Commit.
-   1. Merge and merge conflict.
-   1. Pull request.
-   1. Unit testing.
-   1. Continuous integration.
-   1. Task automation.
-   1. Primary and foreign keys.
-   1. Publication via text processing (rather than by using WYSIWYG tools).
+   - Tidy data.
+   - Pipe and filter model.
+   - Version control repository.
+   - Embedded documentation for software.
+   - Key/value data.
+   - Program decomposition and iterative development.
+   - Vectorized (whole-array) operations.
+   - Commit.
+   - Merge and merge conflict.
+   - Pull request.
+   - Unit testing.
+   - Continuous integration.
+   - Task automation.
+   - Primary and foreign keys.
+   - Publication via text processing (rather than by using WYSIWYG tools).
 1. What misconceptions are expected?
-   1. Why would I use the shell instead of Python? (duplication of utility between tools)
-   1. How come I can't open my data files? (Path issues when using GUI tools)
-   1. What the hell is a "detached HEAD"? (and other Git weirdness)
-   1. What are all these curly braces for? (indexing by name in dictionaries, JSON, etc.)
-   1. How can two different variables have the same name? (variable scope)
-   1. Why did parallelizing my work make it slower? (I/O-bound computation)
-   1. Why can't I install this software/log in to this computer? (permissions)
+   - Why would I use the shell instead of Python? (duplication of utility between tools)
+   - How come I can't open my data files? (Path issues when using GUI tools)
+   - What the hell is a "detached HEAD"? (and other Git weirdness)
+   - What are all these curly braces for? (indexing by name in dictionaries, JSON, etc.)
+   - How can two different variables have the same name? (variable scope)
+   - Why did parallelizing my work make it slower? (I/O-bound computation)
+   - Why can't I install this software/log in to this computer? (permissions)
 1. What *won't* be covered?
-   1. Connecting to remote computers using SSH: no time.
-   1. Parallelizing map-reduce problem using GNU Parallel: too advanced.
-   1. Serving data: it would be cool to show learners how to build data services, but all we can do in a short lesson is show them how to create security holes.
-   1. Writing classes: we want to encourage a mostly-functional style of programming, and there isn't time to cover both higher-order functions and writing classes.
-   1. LaTeX: [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
+   - Writing queries for relational or non-relational databases:
+     feedback is that most data scientists don't do this (they consume data other people have produced).
+   - Connecting to remote computers using SSH:
+     no time.
+   - Parallelizing map-reduce problem using GNU Parallel:
+     too advanced.
+   - Serving data:
+     all we could do in a short lesson is show people how to create security holes.
+   - Writing classes:
+     we want to encourage a mostly-functional style of programming, and there isn't time to cover both higher-order functions and writing classes.
+   - LaTeX:
+     [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
       - We use [Pelican][pelican] rather than [Jekyll][jekyll] because it's Python-based (we can build into `./docs` for publication).
       - And because it parallels the R course using [R Markdown][r-markdown].
-   1. Conditionals and functions in the shell: learners will use Python for anything that complex.
-   1. Docker: too advanced for the intended audience.
-   1. GIS: not universally applicable.
-   1. Image processing: ditto.
-   1. Non-relational databases: there (still) isn't a clear leader, and relational databases allow us to introduce the key concepts.
-   1. Interactive web pages (except the interactivity provided by Altair): there isn't time to teach JavaScript.
-   1. Numerical or statistical methods: lots of high-quality courses already cover these topics.
-   1. High-performance computing: high throughput is more widely useful.
-   1. Symbolic debuggers: unless the course uses a Python IDE.
+   - Conditionals and functions in the shell:
+     learners will use Python for anything that complex.
+   - Docker:
+     too advanced for the intended audience.
+   - GIS:
+     not universally applicable.
+   - Image processing:
+     ditto.
+   - Interactive web pages (except the interactivity provided by Altair):
+     there isn't time to teach JavaScript.
+   - Numerical or statistical methods:
+     lots of high-quality courses already cover these topics.
+   - High-performance computing:
+     high throughput is more widely useful.
+   - Symbolic debuggers:
+     awkward to use through the Jupyter Notebook, but will probably be included in the RStudio version of the course.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -225,22 +230,51 @@ using "selection only" and "transparent background".
 
 ## Step 4: What will learners do along the way?
 
-Another dozen exercise ideas will be added to this list before course development starts,
-and all of them expanded to full text with accompanying solutions
-to show how far learners will get by the end of each lesson.
+*Another dozen exercise ideas will be added to this list before course
+development starts, and all of them expanded to full text with
+accompanying solutions to show how far learners will get by the end of
+each lesson.*
 
-1. Reorganize a messy spreadsheet full of field data.
-1. Debug a stripped-down version of [`cvscut`][csvcut].
-1. Iteratively build a Python tool to identify duplicate datasets.
-1. Reorganize a small project to be consistent with [Noble's Rules][noble].
-1. Package that project's scripts using Pip.
-1. Clean up a set of inconsistently-formatted text data files using regular expressions.
-1. Generate a CSV index of a photo archive.
-1. Fetch data from a website using a REST API.
-1. Create and merge pull requests that have merge conflicts.
-1. Extend a Makefile to download data, merge it into existing data, and regenerate reports.
-1. Write a program to pass a set of pre-written tests.
-1. Publish a single-page website for a project on GitHub.
+### Reorganize Messy Data
+
+The spreadsheet `grades.ods` contains grades for three cohorts of
+undergraduate students who have been taught using different
+techniques.  Reorganize this data into a single tidy sheet with:
+
+- variables in columns
+- observations in rows sorted by subject, property, and date (in that order)
+- a single value per cell
+- column headers that include the variable's name and units
+- empty cells for missing values
+- uniformly-formatted dates
+- a lookup table for categories based on performance
+
+Export the tidy data as a CSV file and compare it to
+`grades-solution.csv`.  Where does your interpretation of "tidy"
+differ from the sample solution's?  Are any of these differences
+important?
+
+### Debug a stripped-down version of [`cvscut`][csvcut].
+
+### Iteratively build a Python tool to identify duplicate datasets.
+
+### Reorganize a small project to be consistent with [Noble's Rules][noble].
+
+### Package that project's scripts using Pip.
+
+### Clean up a set of inconsistently-formatted text data files using regular expressions.
+
+### Generate a CSV index of a photo archive.
+
+### Fetch data from a website using a REST API.
+
+### Create and merge pull requests that have merge conflicts.
+
+### Extend a Makefile to download data, merge it into existing data, and regenerate reports.
+
+### Write a program to pass a set of pre-written tests.
+
+### Publish a single-page website for a project on GitHub.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -255,9 +289,8 @@ we expect that learners will read the questions and answers before class,
 then spend their in-time class working on self-paced exercises
 with tutors and peers available to help them when they get stuck.
 
-This outline is inspired in part by
-the "[minimal manual](http://www.instructionaldesign.org/theories/minimalism.html)" approach to instructional design,
-which suggests that:
+This outline is inspired by the "[minimal manual][minimal-manual]"
+approach to instructional design, which suggests that:
 
 1. All learning tasks should be meaningful and self-contained activities.
 1. Learners should be given realistic projects as quickly as possible.
@@ -266,17 +299,21 @@ which suggests that:
 1. There should be a close linkage between the training and actual system.
 
 This is *not* the same as creating cheatsheets
-(though [the tldr site](https://tldr.ostera.io/) is really useful),
+(though [the tldr site][tldr] is really useful),
 because cheatsheets assume readers already have a mental model and need to refresh details.
 
-- Getting Started
+- **Getting Started (1 hr)**
   - Introduction to this Course
-    - What is open science?
-      - <http://ivory.idyll.org/blog/2016-what-is-open-science.html>
-    - Why is it better than what we're doing now?
+    - What are [open science][what-is-open-science],
+      [reproducible research][reproducible-research],
+      and [computational competence][computational-competence]?
+    - Why are they better than what we're doing now?
     - What is the roadmap for this course?
+  - Setting Up
+    - What software will we need to install?
+    - What online accounts will we need?
 
-- Spreadsheets
+- **Spreadsheets (2 hr)**
   - Cleaning Up Spreadsheet Data
     - Why spreadsheets?
     - Why should we think of spreadsheets as having records with fields?
@@ -287,9 +324,12 @@ because cheatsheets assume readers already have a mental model and need to refre
     - How can we use formulas to calculate new values in a spreadsheet?
     - Why should all values in a spreadsheet be explicit?
     - How can we debug dependencies in a spreadsheet?
-  - Using Lookup Tables
-    - How can we use a lookup table in a spreadsheet?
-    - How can we use named ranges to make lookup tables more robust?
+  - Using Formulas
+    - How can we calculate sums and running totals?
+    - How can we filter data using conditional expressions?
+    - How can we use named ranges to make formulas more robust?
+    - How can we use lookup tables to calculate derived values?
+  - Quality Control
   - Exporting Data
     - How can we export data from a spreadsheet?
     - What is lost when we export data from a spreadsheet?
@@ -298,6 +338,12 @@ because cheatsheets assume readers already have a mental model and need to refre
   - Common Spreadsheet Errors
     - What mistakes do people commonly make in spreadsheets?
     - How can we fix them?
+  - *Big Ideas*
+    - *What tidy data is and how it makes data processing easier*
+    - *What declarative (functional, vectorized, ...) programming is and why it's preferred*
+  - *Challenges*
+    - *Persuading researchers who already know how to program to take spreadsheets seriously*
+    - *Choice of tools: MS Office, OpenOffice, or Google Sheets?*
 
 - The Unix Shell
   - Introduction to the Unix Shell
@@ -513,40 +559,6 @@ because cheatsheets assume readers already have a mental model and need to refre
     - How can we create whisker plots?
   - Time Series Data
     - How can we create time series plots?
-
-- Databases
-  - Introduction to Databases
-    - What is a relational database?
-    - What is a database manager?
-    - What database managers can we use?
-    - When should we use a relational database?
-  - Selecting Data from a Database
-    - How can we select fields from a single table?
-    - How can we order results?
-    - How can we eliminate duplicate results?
-  - Filtering
-    - How can we select specific values from a single table?
-    - How can we calculate new values during selection?
-  - Handling Missing Data
-    - What are nulls?
-    - When should we use nulls?
-    - How can we handle nulls in queries?
-  - Aggregation
-    - How can we combine multiple values?
-    - How can we group values when combining them?
-  - Combining Data
-    - What is a join?
-    - How are joins executed?
-    - What is a primary key?
-    - What is a foreign key?
-  - Modifying Databases
-    - How can we create a new table in a database?
-    - How can we modify or delete data in a table?
-  - Programming with Databases
-    - How can we use databases from Python?
-  - Comparison with Other Tools
-    - How do relational databases compare to spreadsheets?
-    - How do SQL queries compare to programming with Pandas?
 
 - Working with Text
   - Introduction to Regular Expressions
@@ -774,6 +786,9 @@ for people with little or no previous training in either.
 It can be used either as the core of a one-semester for graduate or undergraduate course,
 or for self-study by people who are thinking about becoming data scientists
 and want a solid base to build on.
+
+*This course's primary tools are Google Sheets, Unix, Python, and the Jupyter Notebook.
+Parallel material using Excel, Windows, R, and RStudio will be designed separately.*
 
 ### Prerequisites
 
