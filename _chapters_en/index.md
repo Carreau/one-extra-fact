@@ -237,7 +237,7 @@ each lesson.*
 
 ### Reorganize Messy Data
 
-The spreadsheet `grades.ods` contains grades for three cohorts of
+The spreadsheet `scores.ods` contains scores for three cohorts of
 undergraduate students who have been taught using different
 techniques.  Reorganize this data into a single tidy sheet with:
 
@@ -250,21 +250,39 @@ techniques.  Reorganize this data into a single tidy sheet with:
 - a lookup table for categories based on performance
 
 Export the tidy data as a CSV file and compare it to
-`grades-solution.csv`.  Where does your interpretation of "tidy"
+`scores-solution.csv`.  Where does your interpretation of "tidy"
 differ from the sample solution's?  Are any of these differences
 important?
 
-### Debug a stripped-down version of [`cvscut`][csvcut].
+### Index a Dataset
 
-### Iteratively build a Python tool to identify duplicate datasets.
+The folder `scores` contains several dozen tidy datasets, each
+formatted as a CSV file.  Each file has a column titled `person`
+containing a randomly-generated ID that identifies a study subject.
+Write a Python program that reads these files and produces an index
+recording which subjects appear in which datasets:
+
+- The program should be called `person-file-index.py`.
+- It takes two arguments, both optional:
+  - The path to the folder containing the data files (default `.`).
+  - The name of the output file (if none is given, the program
+    writes the index to standard output).
+- If any CSV file in the specified folder does *not* have a single
+  column titled `person`, the program prints an error message to
+  standard error and exits without creating an output file or
+  printing anything to standard output.
+- The output must have exactly two columns titled `person` and `filename`.
+  - Each (`person`, `filename`) pair must be unique.
+  - The `person` value must be a string, even if the ID read from
+    the input was all digits.
+  - The `filename` value contain only the filename (not any folder
+    names).
 
 ### Reorganize a small project to be consistent with [Noble's Rules][noble].
 
 ### Package that project's scripts using Pip.
 
 ### Clean up a set of inconsistently-formatted text data files using regular expressions.
-
-### Generate a CSV index of a photo archive.
 
 ### Fetch data from a website using a REST API.
 
@@ -352,7 +370,7 @@ because cheatsheets assume readers already have a mental model and need to refre
     - How do we run bash?
     - What is an absolute path?
     - What is a relative path?
-    - How do we see what's in a directory?
+    - How do we see what's in a folder?
     - How do we move around in the shell?
   - Manipulating Files in the Shell
     - How do we view the contents of a text file?
