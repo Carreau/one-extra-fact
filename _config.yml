@@ -4,9 +4,11 @@ subtitle: "A Pragmatic Introduction to Research Computing"
 author: "Greg Wilson"
 copyrightyear: "2018"
 repo: "https://github.com/gvwilson/merely-useful/"
-isbn: "000-0-0000000-0"
 email: "gvwilson@third-bit.com"
+isbn: "000-0-0000000-0"
 website: "https://gvwilson.github.io/merely-useful/"
+purchase: "FIXME"
+paypal: "FIXME"
 
 # Theme color.
 background: "#f0e0e0"
@@ -29,6 +31,12 @@ exclude:
 - requirements.txt
 - tex_en/inc
 
+# Markers in generated files.
+marker:
+  start: "<!-- main start -->"
+  end: "<!-- main end -->"
+  crossref: "let CROSSREF="
+
 # Collections: one for lessons and one for extras for each language suffix.
 collections:
   chapters_en:
@@ -46,7 +54,7 @@ defaults:
 toc:
   lessons:
   - /intro/
-  - /conclusion/
+  - /finale/
   extras:
   - /license/
   - /conduct/
