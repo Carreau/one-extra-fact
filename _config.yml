@@ -7,8 +7,8 @@ repo: "https://github.com/gvwilson/merely-useful/"
 email: "gvwilson@third-bit.com"
 isbn: "000-0-0000000-0"
 website: "https://gvwilson.github.io/merely-useful/"
-# purchase: "FIXME"
-# paypal: "FIXME"
+purchase: ""
+paypal: ""
 
 # Theme color.
 background: "#f0e0e0"
@@ -49,6 +49,7 @@ defaults:
       type: chapters_en
     values:
       language: "en"
+      layout: "default"
 
 # Order for Table of Contents.
 toc:
@@ -68,3 +69,4 @@ translations:
   en:
     generated: "Last generated"
     objectives: "After reading this chapter, you will be able to..."
+    singlepage: "Single page version"
