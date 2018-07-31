@@ -2,27 +2,17 @@
 permalink: "/en/intro/"
 title: "Introduction"
 questions:
-- "Sed turpis tincidunt id aliquet risus feugiat?"
-objectives:
-- "Nullam non nisi est sit amet facilisis magna etiam."
+-   "What are open science, reproducible research, and computational competence?"
+-   "Why are they better than what we're doing now?"
+-   "What is the roadmap for this course?"
+-   "What software is needed for this course?"
+-   "What online accounts are needed for this course?"
 keypoints:
-- "Nec nam aliquam sem et."
+- FIXME
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia
-quis vel eros donec ac odio tempor orci. Dignissim cras tincidunt
-lobortis feugiat vivamus at. Lacus luctus accumsan tortor posuere ac
-ut consequat semper viverra. Id volutpat lacus laoreet non curabitur
-gravida.
+FIXME
 
-> **Convallis convallis**
-> 
-> Contributions of all kinds are welcome, from errata and minor
-> improvements to entirely new sections and chapters. All proposed
-> contributions will be managed in the same way as edits to Wikipedia
-> or patches to open source software, and all contributors will be
-> credited for their work each time a new version is released. Please
-> see [s:conduct](#APPENDIX) for our code of conduct.
+## Exercises {#s:intro-exercises}
 
 {% include links.md %}

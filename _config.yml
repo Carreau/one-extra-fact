@@ -55,6 +55,8 @@ defaults:
 toc:
   lessons:
   - /intro/
+  - /tidy/
+  - /r/
   - /finale/
   bib:
   - /bib/

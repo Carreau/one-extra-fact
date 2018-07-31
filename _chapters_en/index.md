@@ -278,7 +278,12 @@ recording which subjects appear in which datasets:
   - The `filename` value contain only the filename (not any folder
     names).
 
-### Reorganize a small project to be consistent with [Noble's Rules][noble].
+### Reorganize a Small Project
+
+The folder `thesis` contains shell scripts, Python programs, data
+collected directly from laboratory equipment (as CSV files) and
+several plots generated from that data.  Reorganize that material so
+that it conforms to [Noble's Rules][noble].
 
 ### Package that project's scripts using Pip.
 
