@@ -11,10 +11,15 @@ keypoints:
 - FIXME
 ---
 
-FIXME
-
--   Real goal is better working practices
--   Teach tools to facilitate, encourage, and accelerate their use
+-   Research is becoming more compute intensive
+    -   Modeling, simulation, data analysis, data management, etc.
+-   Research doesn't necessarily mean "academic"
+    -   Most data scientists are doing research
+    -   Act on findings instead of publishing them
+-   Researchers of all kinds need the equivalent of good laboratory skills for computing
+    -   Because software is just another kind of lab equipment
+-   The goal of this training is to introduce the minimum set of practices every researcher should have
+    -   Frame the training around tools because they facilitate, encourage, and accelerate good practices
 
 ## Good Enough Practices
 
@@ -66,5 +71,7 @@ FIXME
     -   Write the manuscript in a plain text format amenable to version control
 
 ## Exercises {#s:intro-exercises}
+
+FIXME: exercises for introduction
 
 {% include links.md %}
