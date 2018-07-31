@@ -9,7 +9,7 @@ LATEX=pdflatex
 BIBTEX=bibtex
 PANDOC=pandoc
 PANDOC_FLAGS=--from=markdown --to=latex
-REPO=FIXME
+REPO=http://github.com/gvwilson/merely-useful/
 
 # Language-dependent settings.
 DIR_MD=_chapters_${lang}
@@ -153,8 +153,10 @@ nonascii :
 ## clean      : clean up junk files.
 clean :
 	@rm -rf _site ${CHAPTERS_TEX} */*.aux */*.bbl */*.blg */*.log */*.out */*.toc
+	@rm -rf ${DIR_TEX}/inc
 	@find . -name .DS_Store -exec rm {} \;
 	@find . -name '*~' -exec rm {} \;
+	@find . -name '__pycache__' -exec rm -r {} \;
 
 ## settings   : show macro values.
 settings :

@@ -1,5 +1,5 @@
 ---
-permalink: "/en/tidy/"
+permalink: "/en/git/"
 title: "Version Control with Git"
 questions:
 -   "What is tidy data?"
