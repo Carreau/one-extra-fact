@@ -7,8 +7,10 @@ This page holds material that *isn't* included in the course design.
 1. What questions will this course answer?
 1. What concepts and techniques will learners meet?
    - Write queries in SQL.
+   - Visualize data with Altair.
 1. What technologies, packages, or functions will learners use?
    - SQL: same topics as the [Software Carpentry lesson][swc-sql].
+   - Altair: new material.
 1. What concepts will be introduced?
 1. What misconceptions are expected?
 1. What *won't* be covered?
@@ -48,4 +50,35 @@ This page holds material that *isn't* included in the course design.
   - Comparison with Other Tools
     - How do relational databases compare to spreadsheets?
     - How do SQL queries compare to programming with Pandas?
+- Managing Data
+  - Normalizing Data
+    - What is normalized data?
+    - How can we normalize our data?
+  - Metadata
+    - What is metadata?
+    - How should we represent metadata?
+    - Where should we store metadata?
+  - Storing Data
+    - What formats should we use for storing our data?
+    - Where should we store data?
+- Making Programs Faster
+  - Computer Architecture
+    - How are modern computer systems organized?
+    - How long do typical operations take?
+  - Performance Profiling
+    - How can we tell where a program is spending its time?
+    - How can we tell if it will be possible to make a program faster?
+    - How can we tell whether it will be worth making our programs faster?
+  - Performance Tuning
+    - How can we make our programs faster?
+- Working on the Web
+  - Introduction to XML
+    - What is XML?
+    - How is XML different from HTML?
+  - Working with HTML/XML
+    - How do we represent HTML/XML in a program?
+    - What are XPath and XQuery?
+  - HTML in the Real World
+    - Why is so much HTML badly formatted?
+    - How can we process badly-formatted HTML?
 

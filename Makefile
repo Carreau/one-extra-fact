@@ -55,7 +55,7 @@ pdf : ${DIR_TEX}/book.pdf
 ## tex         : generate LaTeX for book, but don't compile to PDF.
 tex : ${CHAPTERS_TEX}
 
-${DIR_TEX}/book.pdf : ${ALL_TEX} ${BIB_SRC}
+${DIR_TEX}/book.pdf : ${ALL_TEX} ${BIB_SRC} files/crossref.js
 	@cd ${DIR_TEX} \
 	&& ${LATEX} book \
 	&& ${BIBTEX} book \
@@ -163,9 +163,9 @@ years :
 clean :
 	@rm -rf _site ${CHAPTERS_TEX} */*.aux */*.bbl */*.blg */*.log */*.out */*.toc
 	@rm -rf ${DIR_TEX}/inc
+	@rm -rf bin/__pycache__
 	@find . -name .DS_Store -exec rm {} \;
 	@find . -name '*~' -exec rm {} \;
-	@find . -name '__pycache__' -exec rm -r {} \;
 
 ## settings    : show macro values.
 settings :

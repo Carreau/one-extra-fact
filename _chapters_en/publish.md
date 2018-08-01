@@ -7,7 +7,7 @@ questions:
 -   "When and why should researchers use spreadsheets?"
 -   "When and why shouldn't they?"
 keypoints:
-- FIXME
+-   FIXME
 ---
 
 -   How has the web changed research publishing?

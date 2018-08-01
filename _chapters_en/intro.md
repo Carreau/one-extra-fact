@@ -8,7 +8,7 @@ questions:
 -   "What software is needed for this course?"
 -   "What online accounts are needed for this course?"
 keypoints:
-- FIXME
+-   FIXME
 ---
 
 -   Research is becoming more compute intensive

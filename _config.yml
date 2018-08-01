@@ -56,11 +56,13 @@ toc:
   lessons:
   - /intro/
   - /tidy/
-  - /r/
+  - /python/
+  - /numpy/
   - /git/
   - /shell/
   - /text/
   - /publish/
+  - /pandas/
   - /finale/
   bib:
   - /bib/
@@ -69,6 +71,7 @@ toc:
   - /conduct/
   - /citation/
   - /gloss/
+  - /design/
 
 # Translations by language.
 translations:
