@@ -17,6 +17,252 @@ This page holds material that *isn't* included in the course design.
 
 ## Step 5: How are the concepts connected?
 
+- Getting Started
+  - Introduction to this Course
+    - What are [open science][what-is-open-science],
+      [reproducible research][reproducible-research],
+      and [computational competence][computational-competence]?
+    - Why are they better than what we're doing now?
+    - What is the roadmap for this course?
+  - Setting Up
+    - What software will we need to install?
+    - What online accounts will we need?
+
+- Spreadsheets
+  - Cleaning Up Spreadsheet Data
+    - Why spreadsheets?
+    - Why should we think of spreadsheets as having records with fields?
+    - What headers should spreadsheet columns have?
+    - What is the difference between numbers and text?
+    - What is an atomic value?
+  - Making Values Explicit
+    - How can we use formulas to calculate new values in a spreadsheet?
+    - Why should all values in a spreadsheet be explicit?
+    - How can we debug dependencies in a spreadsheet?
+  - Using Formulas
+    - How can we calculate sums and running totals?
+    - How can we filter data using conditional expressions?
+    - How can we use named ranges to make formulas more robust?
+    - How can we use lookup tables to calculate derived values?
+  - Quality Control
+  - Exporting Data
+    - How can we export data from a spreadsheet?
+    - What is lost when we export data from a spreadsheet?
+    - What is a record key?
+    - Why should records have keys?
+  - Common Spreadsheet Errors
+    - What mistakes do people commonly make in spreadsheets?
+    - How can we fix them?
+  - *Big Ideas*
+    - *What tidy data is and how it makes data processing easier*
+    - *What declarative (functional, vectorized, ...) programming is and why it's preferred*
+  - *Challenges*
+    - *Persuading researchers who already know how to program to take spreadsheets seriously*
+    - *Choice of tools: MS Office, OpenOffice, or Google Sheets?*
+
+- The Unix Shell
+  - Introduction to the Unix Shell
+    - What is the difference between an operating system and a shell?
+    - Why the Unix shell?
+    - How do we run bash?
+    - What is an absolute path?
+    - What is a relative path?
+    - How do we see what's in a folder?
+    - How do we move around in the shell?
+  - Manipulating Files in the Shell
+    - How do we view the contents of a text file?
+    - How do we copy a file?
+    - How do we move a file?
+    - How do we rename a file?
+    - How do we delete a file?
+  - Editing Text Files
+    - What's the difference between a text file and a binary file?
+    - How do we run a text editor?
+    - How do we edit text in a text editor?
+    - How do we move around in a text editor?
+    - How do we find and replace in a text editor?
+  - Operating on Text
+    - How do we find out how long a file is?
+    - How do we select the top or bottom of a file?
+    - How do we save the output of a command in a file?
+  - Shortcuts
+    - How do we see what I've done?
+    - How do we use tab completion to fill in filenames?
+    - How do we repeat previous commands?
+  - Pipes
+    - How do we combine two or more commands?
+    - How do we select columns of text?
+  - Variables
+    - What is a variable?
+    - How do we create variables?
+    - How do we use variables?
+    - What variables does the shell automatically create for us?
+  - Writing Shell Scripts
+    - "Ninety percent of most magic merely consists of knowing one extra fact." - Terry Pratchett
+    - How do we execute commands saved in a file?
+    - How do we pass filenames into a script?
+  - Repeating Things in the Shell
+    - What is a loop?
+    - How do we write a loop in a shell script?
+    - How do we write a loop interactively?
+
+- Version Control
+  - Introduction to Version Control
+    - What is version control?
+    - When and why should we use version control?
+  - Setting Up
+    - How can we configure version control on a new machine?
+    - How can we create a repository?
+    - How can we record changes to a set of files?
+  - Viewing History
+    - How can we view the history of a project?
+    - How can we compare files to previous versions of themselves?
+    - How can we ignore files we don't want to track?
+  - Using Remote Repositories
+    - What is a remote repository?
+    - How can we create a remote repository?
+    - How can we synchronize repositories?
+  - Sharing Work
+    - How can we work with other people's repositories?
+    - How can we share our work with other people?
+  - Collaborating
+    - What kinds of licenses can we apply to our work?
+      - <http://choosealicense.com/>
+      - <http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/>
+    - How can we make our work easier to cite?
+    - Where can we host our work?
+  - Working with Branches
+    - What is a branch?
+    - When should we use branches?
+    - How do we create branches?
+    - How do we merge branches?
+  - Handling Conflicts
+    - What is a conflict?
+    - How can we tell when a conflict has occurred?
+    - How can we view a conflict?
+    - How can we resolve conflicts?
+  - Workflow
+    - How are branches used to enable collaboration?
+
+- Programming in Python
+  - Introduction to Python
+    - What is a programming language?
+    - Why Python?
+    - How do we create and use variables in Python?
+  - Data Types
+    - What are data types?
+    - What data types does Python have?
+    - What are type errors?
+    - What are functions?
+    - How do we call functions?
+    - How can we use functions to convert data from one type to another?
+  - Libraries
+    - What is a library?
+    - How do we use a library?
+    - What are some commonly-used Python libraries?
+  - Repeating Things in Python
+    - How do we write a loop in Python?
+  - Line-Oriented File I/O
+    - How do we open, read, and close files in Python?
+    - How do we read a file a line at a time?
+  - Basic String Operations
+    - What is a method?
+    - What methods do strings have?
+    - How can we use string methods to process text files?
+  - Lists
+    - What is a list?
+    - How do we create a list?
+    - How do we index a list?
+    - How do we modify a list?
+    - How do we loop over the elements of a list?
+    - How do we loop over a range of numbers?
+  - Conditionals
+    - What is an `if` statement?
+    - What are `else` and `elif` statements?
+  - Writing Filters
+    - How can we combine loops and conditionals to create filters?
+    - How can we pass filenames to a Python script?
+  - Errors
+    - What is the difference between a syntax error and a runtime error?
+    - How can we make sense of Python's error reports?
+  - Getting Help
+    - Where can we look for help when errors occur?
+  - Asking for Help
+    - How can we ask questions to elicit helpful responses?
+  - Functions
+    - When should we create a function?
+    - What's the difference between defining a function and calling it?
+    - How do we define a function?
+    - How do we return a value from a function?
+    - How do we call a function we have defined?
+  - Passing Values to Functions
+    - What is the difference between an argument and a parameter?
+    - When are parameters created?
+    - When are parameters destroyed?
+  - Programming Style
+    - What should we call the variables and functions we create?
+    - How can we document functions?
+  - Sets
+    - What is a set?
+    - Why are sets useful?
+    - How do we create sets?
+    - How do we manipulate sets?
+    - What kinds of values can we store in sets?
+    - What are sets good for?
+  - Dictionaries
+    - What is a dictionary?
+    - How do we create dictionaries?
+    - How do we manipulate dictionaries?
+  - Using Dictionaries
+    - What are dictionaries good for?
+
+- Scientific Programming
+  - Introduction to Arrays
+    - What is NumPy?
+    - What is an array?
+    - How can we create arrays?
+    - What properties do arrays have?
+    - How can we read data into arrays?
+    - How can we visualize arrays?
+  - Indexing
+    - What is a slice?
+    - What are some common ways to slice arrays?
+    - What are some common reasons to slice arrays?
+  - Array Operations
+    - What are whole-array operations?
+    - Why are whole-array operations more efficient than loops?
+    - How can we use NumPy to do linear algebra?
+  - Images
+    - What is the relationship between an image and an array?
+    - How can we load and save images?
+    - How can we manipulate pixel values?
+  - Array Conditionals
+    - What is a mask?
+    - How can we use masks to manipulate images?
+  - Image Processing
+    - What is scikit-image?
+    - What tools are in scikit-image?
+
+- Data Analysis
+  - Introduction to Pandas
+    - What is Pandas?
+    - What is a dataframe?
+  - Reading, Writing, and Displaying Data
+    - How can we read data into a dataframe?
+    - How can we save dataframes to files?
+  - Working with Dataframes
+    - What properties do dataframes have?
+    - What methods do dataframes have?
+    - How can we select individual rows and columns from dataframes?
+    - How can we create simple visualizations of dataframes?
+  - Selecting Data from a Dataframe
+    - How can we select subsets of data from dataframes?
+  - Grouping Data
+    - How can we operate on subsets of data from dataframes?
+  - Cleaning Up Data
+    - What is tidy data?
+    - How can we create tidy data?
+
 - Databases
   - Introduction to Databases
     - What is a relational database?
@@ -50,6 +296,7 @@ This page holds material that *isn't* included in the course design.
   - Comparison with Other Tools
     - How do relational databases compare to spreadsheets?
     - How do SQL queries compare to programming with Pandas?
+
 - Managing Data
   - Normalizing Data
     - What is normalized data?
@@ -71,14 +318,198 @@ This page holds material that *isn't* included in the course design.
     - How can we tell whether it will be worth making our programs faster?
   - Performance Tuning
     - How can we make our programs faster?
-- Working on the Web
-  - Introduction to XML
-    - What is XML?
-    - How is XML different from HTML?
-  - Working with HTML/XML
-    - How do we represent HTML/XML in a program?
-    - What are XPath and XQuery?
-  - HTML in the Real World
-    - Why is so much HTML badly formatted?
-    - How can we process badly-formatted HTML?
 
+- Visualization
+  - Introduction to Visualization
+    - How can we choose the best kind of chart for our data and question?
+    - What tools are available for creating charts?
+      - <http://lisacharlotterost.github.io/2016/05/17/one-chart-tools/>
+  - Faceted Data
+    - How can we create faceted histograms?
+    - How can we create bubble plots?
+    - How can we create whisker plots?
+  - Time Series Data
+    - How can we create time series plots?
+
+- Working with Text
+  - Introduction to Regular Expressions
+    - What are regular expressions?
+    - What basic patterns can regular expressions match?
+  - Extracting Information
+    - How can we get the parts of text that a regular expression matches?
+  - Programming with Regular Expressions
+    - How can we use regular expressions in Python?
+    - How can we use regular expressions in the Unix shell?
+    - How can we use regular expressions in SQL?
+  - Introduction to OpenRefine
+    - What is OpenRefine?
+    - How can we facet, cluster, and split data in OpenRefine?
+  - Scripting OpenRefine
+    - How can we re-do data cleanup in OpenRefine?
+  - Validating Data
+    - How can we check the integrity of our data?
+
+- Getting It Right
+  - Introduction to Testing
+    - What kinds of tests can we write for software?
+    - Why can't testing ever prove that software is correct?
+    - Why is it worth doing anyway?
+    - How much testing is enough?
+  - Writing Unit Tests
+    - What is a unit test?
+    - What outcomes can a unit test have?
+    - How can we write unit tests?
+    - How can we run unit tests?
+  - Testing Floating Point Calculations
+    - Why are floating point calculations hard to test?
+    - How should we write tests for floating point calculations?
+      - <https://peerj.com/articles/cs-58/>
+  - Choosing Tests
+    - What unit tests should we write?
+    - When should we write our unit tests?
+  - Introduction to Code Review
+    - What is code review?
+    - What are the benefits of code review?
+    - When is code review not practical?
+  - Reading Code
+    - What should we look for when reviewing code?
+  - Managing Code Reviews
+    - Who should review what?
+    - How should we respond to code reviews?
+  - Continuous Integration
+    - What is continuous integration?
+    - How can we set up continuous integration with version control?
+  - Designing Testable Software
+    - What sorts of things make software harder to test?
+    - How can we work around common obstacles to testability?
+  - Introduction to Debugging
+    - How can we use the experimental method to find and fix bugs?
+  - Using a Debugger
+    - What is a symbolic debugger?
+    - How can we single-step through a program?
+    - How can we set a breakpoint?
+    - How can we set a conditional breakpoint?
+  - Coverage Analysis
+    - What is coverage analysis?
+    - How can we see how much of our program we are testing?
+    - How much coverage is enough?
+
+- Making Work Reproducible
+  - Introduction to Make
+    - What is a build manager?
+    - When and why should we use a build manager?
+  - Managing Dependencies
+    - How do we express dependencies in Make?
+    - How does make decide what commands to execute?
+    - How can we generalize rules in Make?
+  - Using Functions in Makefiles
+    - Why should we use functions in Makefiles?
+    - What are some commonly-used Make functions?
+
+- Managing Research Software Projects
+  - Organizing Projects
+    - What are Noble's Rules?
+    - Why should we organize projects this way?
+  - Installing Software
+    - What happens when software is installed?
+    - How can we manage software installation?
+  - Making Software Robust
+    - What do we mean by "robust software"?
+    - What are Taschuk's Rules?
+    - How can we tell if software is robust?
+  - Introduction to Packaging
+    - What is a package manager?
+    - Why should we rely on a package manager?
+    - How does a package manager work?
+  - Making Requirements Explicit
+    - How can we make our program's requirements explicit?
+  - Making a Package
+    - How can we create a package so that other people can install our program?
+    - <https://github.com/DamienIrving/teaching/blob/master/imas-pug/conda_tutorial.md>
+  - Software Lifecycles
+    - What is a software development lifecycle?
+    - How do good research teams *actually* develop software?
+  - Managing Requirements
+    - How do we figure out what software ought to do?
+    - How can we tell if it's doing it?
+  - Issue Tracking
+    - What is an issue tracker?
+    - When and why are issue trackers better than simple to-do lists?
+    - How can we write a good issue?
+  - Managing Meetings
+    - How can we make meetings more productive?
+  - Making Projects Welcoming
+    - What factors discourage individuals from taking part in open projects?
+    - What can we do to reduce or eliminate these factors?
+  - Making Projects Inclusive
+    - What factors discourage groups from taking part in open projects?
+    - What can we do to reduce or eliminate these factors?
+
+- Publishing
+  - 21st Century Publishing
+    - How has the web changed research publishing?
+    - What is an ORCID?
+    - What is a DOI?
+  - Managing Citations
+    - What is a bibliography manager?
+    - Why should we use a bibliography manager?
+    - How should we publish our bibliography?
+  - Introduction to HTML
+    - What is HTML?
+    - What are the basic elements of a web page?
+    - How can we create web pages?
+    - How can we publish web pages?
+  - Markdown
+    - What is Markdown?
+    - What are some commonly-used features of Markdown?
+    - How can we translate Markdown files into other formats?
+  - Introduction to WordPress
+    - What is WordPress?
+    - How can we set up WordPress?
+    - How can we create a simple website with WordPress?
+  - Introduction to Jekyll
+    - What is a templating engine?
+    - How can we use the same layout for many pages?
+    - How can we preview pages?
+    - How can we publish a website on GitHub?
+    - How does Jekyll compare to WordPress?
+  - Using Variables
+    - How can we configure Jekyll?
+    - How does variable substitution work?
+    - How can we use the same layout for all our pages?
+    - How can we modularize our pages?
+  - Blogging
+    - What is RSS?
+    - How does blogging work?
+    - How can we create a blog using Jekyll and GitHub Pages?
+
+- Working on the Web
+  - HTTP
+    - What is HTTP?
+    - What is the HTTP request/response cycle?
+    - How can we parameterize HTTP requests?
+  - Getting Data from the Web
+    - How can we get data from the web using Python?
+    - How can we get data from the web using the Unix shell?
+    - <http://www.meanboyfriend.com/overdue_ideas/2016/06/introduction-to-apis-using-iiif/>
+  - Web Scraping
+    - How can we get data from web pages?
+  - Publishing Data from the Web
+    - How should people publish data on the web?
+    - How do people actually publish data on the web?
+
+- Conclusion
+  - What We Left Out
+    - What is object-oriented programming?
+    - What is high-performance computing?
+  - Big Ideas
+    - It's all data.
+    - Programming is about creating and composing abstractions.
+    - Models are for computers, views are for people.
+    - Paranoia makes us productive.
+    - Better algorithms are better than better hardware.
+    - The tool shapes the hand.
+    - Society shapes science for both good and ill.
+  - Wrapping Up This Course
+    - What does "done" look like?
+    - How are we going to get there?
