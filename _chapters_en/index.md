@@ -828,9 +828,9 @@ Learners will need:
 - [Data Carpentry][dc]
 - [Data Carpentry for Biologists][dcb]
 - [Learn the tidyverse][tidyverse]
-- "[Best Practices for Scientific Computing][best]"
-- "[Good Enough Practices in Scientific Computing][good]"
-- "[Ten Simple Rules for Making Research Software More Robust][robust]"
-- [Managing Research Software Projects][mrsp]
+- [[Wils2014](#CITE)]
+- [[Wils2017](#CITE)]
+- [[Tasc2017](#CITE)]
+- [Building a Research Software Commons][brsc]
 
 {% include links.md %}
