@@ -406,7 +406,7 @@ because cheatsheets assume readers already have a mental model and need to refre
     - How do we use variables?
     - What variables does the shell automatically create for us?
   - Writing Shell Scripts
-    - "Ninety percent of most magic merely consists of knowing one extra fact." – Terry Pratchett
+    - "Ninety percent of most magic merely consists of knowing one extra fact." - Terry Pratchett
     - How do we execute commands saved in a file?
     - How do we pass filenames into a script?
   - Repeating Things in the Shell
