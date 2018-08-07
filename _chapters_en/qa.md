@@ -32,30 +32,6 @@ keypoints:
 ## Debugging
 
 -   How can we use the experimental method to find and fix bugs?
--   What is a symbolic debugger?
--   How can we single-step through a program?
--   How can we set a breakpoint?
--   How can we set a conditional breakpoint?
-
-## Reading Code
-
--   What is code review?
--   What are the benefits of code review?
--   When is code review not practical?
--   What should we look for when reviewing code?
--   Who should review what?
--   How should we respond to code reviews?
-
-## Coverage Analysis
-
--   What is coverage analysis?
--   How can we see how much of our program we are testing?
--   How much coverage is enough?
-
-## Writing Testable Software
-
--   What sorts of things make software harder to test?
--   How can we work around common obstacles to testability?
 
 ## Exercises {#s:qa-exercises}
 

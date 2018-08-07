@@ -78,96 +78,88 @@ data using more complicated statistical methods.
 
 ## Step 2: Brainstorming
 
-1. What questions will this course answer?
-   - How can I manage data, code, and reports?
-   - How can I build software faster?
-   - How can I tell if my software is correct?
-   - How can I make my work reproducible?
-   - How can I share data and software with others?
-1. What concepts and techniques will learners meet?
-   - Organize and manipulate tabular data in a spreadsheet.
-   - Manage and process files with the Unix shell.
-   - Process tabular data in Python.
-   - Program iteratively and defensively.
-   - Embed documentation in code.
-   - Name and organize the files in a project systematically.
-   - Track work with Git using a branching workflow.
-   - Share work with GitHub using pull requests.
-   - Make work reproducible using Make.
-   - Write tests with PyTest.
-   - Install packages with Pip.
-   - Do numerical computing with NumPy.
-   - Do statistics with Pandas.
-   - Process text with regular expressions.
-   - Fetch remote data using Requests.
-   - Create and publish a static website using GitHub Pages.
-   - Use ORCIDs and DOIs to identify authors, reports, and data.
-1. What technologies, packages, or functions will learners use?
-   - Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
-   - Unix shell: same topics as the [Software Carpentry lesson][swc-shell], with some [extra material][swc-shell-extra] on permissions.
-   - Python, NumPy, and Pandas: same topics as the [revised Software Carpentry lesson][swc-python], with extra material on writing command-line utilities.
-   - Pytest: new material.
-   - Jupyter Notebook: introduced *after* learners are comfortable processing tabular data in Python.
-   - Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
-   - Project organization: topics taken from [Managing Research Software Projects][mrsp] and [Noble's rules][noble].
-   - Packaging: new material (using Pip rather than Conda for simplicity).
-   - Working with remote data: new material on the Python `requests` library.
-   - Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
-1. What concepts will be introduced?
-   - Tidy data.
-   - Pipe and filter model.
-   - Version control repository.
-   - Embedded documentation for software.
-   - Key/value data.
-   - Program decomposition and iterative development.
-   - Vectorized (whole-array) operations.
-   - Commit.
-   - Merge and merge conflict.
-   - Pull request.
-   - Unit testing.
-   - Continuous integration.
-   - Task automation.
-   - Primary and foreign keys.
-   - Publication via text processing (rather than by using WYSIWYG tools).
-1. What misconceptions are expected?
-   - Why would I use the shell instead of Python? (duplication of utility between tools)
-   - How come I can't open my data files? (Path issues when using GUI tools)
-   - What the hell is a "detached HEAD"? (and other Git weirdness)
-   - What are all these curly braces for? (indexing by name in dictionaries, JSON, etc.)
-   - How can two different variables have the same name? (variable scope)
-   - Why did parallelizing my work make it slower? (I/O-bound computation)
-   - Why can't I install this software/log in to this computer? (permissions)
-1. What *won't* be covered?
-   - Writing queries for relational or non-relational databases:
-     feedback is that most data scientists don't do this (they consume data other people have produced).
-   - Connecting to remote computers using SSH:
-     no time.
-   - Parallelizing map-reduce problem using GNU Parallel:
-     too advanced.
-   - Serving data:
-     all we could do in a short lesson is show people how to create security holes.
-   - Writing classes:
-     we want to encourage a mostly-functional style of programming, and there isn't time to cover both higher-order functions and writing classes.
-   - LaTeX:
-     [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
-      - We use [Pelican][pelican] rather than [Jekyll][jekyll] because it's Python-based (we can build into `./docs` for publication).
-      - And because it parallels the R course using [R Markdown][r-markdown].
-   - Conditionals and functions in the shell:
-     learners will use Python for anything that complex.
-   - Docker:
-     too advanced for the intended audience.
-   - GIS:
-     not universally applicable.
-   - Image processing:
-     ditto.
-   - Interactive web pages (except the interactivity provided by Altair):
-     there isn't time to teach JavaScript.
-   - Numerical or statistical methods:
-     lots of high-quality courses already cover these topics.
-   - High-performance computing:
-     high throughput is more widely useful.
-   - Symbolic debuggers:
-     awkward to use through the Jupyter Notebook, but will probably be included in the RStudio version of the course.
+1.  What questions will this course answer?
+    -   How can I manage data, code, and reports?
+    -   How can I build software faster?
+    -   How can I tell if my software is correct?
+    -   How can I make my work reproducible?
+    -   How can I share data and software with others?
+1.  What concepts and techniques will learners meet?
+    -   Organize and manipulate tabular data in a spreadsheet.
+    -   Manage and process files with the Unix shell.
+    -   Process tabular data in Python.
+    -   Program iteratively and defensively.
+    -   Embed documentation in code.
+    -   Name and organize the files in a project systematically.
+    -   Track work with Git using a branching workflow.
+    -   Share work with GitHub using pull requests.
+    -   Make work reproducible using Make.
+    -   Write tests with PyTest.
+    -   Install packages with Pip.
+    -   Do numerical computing with NumPy.
+    -   Do statistics with Pandas.
+    -   Process text with regular expressions.
+    -   Create and publish a static website using GitHub Pages.
+    -   Use ORCIDs and DOIs to identify authors, reports, and data.
+1.  What technologies, packages, or functions will learners use?
+    -   Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
+    -   Unix shell: same topics as the [Software Carpentry lesson][swc-shell],
+        with some [extra material][swc-shell-extra] on permissions.
+    -   Python, NumPy, and Pandas: same topics as the [revised Software Carpentry lesson][swc-python],
+        with extra material on writing command-line utilities.
+    -   Pytest: new material.
+    -   Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
+    -   Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
+1.  What concepts will be introduced?
+    -   Tidy data.
+    -   Pipe and filter model.
+    -   Version control repository.
+    -   Embedded documentation for software.
+    -   Key/value data.
+    -   Program decomposition and iterative development.
+    -   Commit.
+    -   Merge and merge conflict.
+    -   Pull request.
+    -   Unit testing.
+    -   Publication via text processing (rather than by using WYSIWYG tools).
+1.  What misconceptions are expected?
+    -   Why would I use the shell instead of Python? (duplication of utility between tools)
+    -   How come I can't open my data files? (Path issues when using GUI tools)
+    -   What the hell is a "detached HEAD"? (and other Git weirdness)
+    -   What are all these curly braces for? (indexing by name in dictionaries, JSON, etc.)
+    -   How can two different variables have the same name? (variable scope)
+1.  What *won't* be covered?
+    -   Package management: out of scope.
+    -   Writing queries for relational or non-relational databases:
+        feedback is that most data scientists don't do this (they consume data other people have produced).
+    -   Connecting to remote computers using SSH:
+        no time.
+    -   Parallelizing map-reduce problem using GNU Parallel:
+        too advanced.
+    -   Serving data:
+        all we could do in a short lesson is show people how to create security holes.
+    -   Higher-order functions and object-oriented programming:
+        there isn't time.
+    -   LaTeX:
+        [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
+        -   We use [Pelican][pelican] rather than [Jekyll][jekyll] because it's Python-based (we can build into `./docs` for publication).
+        -   And because it parallels the R course using [R Markdown][r-markdown].
+    -   Conditionals and functions in the shell:
+        learners will use Python for anything that complex.
+    -   Docker:
+        too advanced for the intended audience.
+    -   GIS:
+        not universally applicable.
+    -   Image processing:
+        ditto.
+    -   Interactive web pages:
+        there isn't time to teach JavaScript (or even something like Altair).
+    -   Numerical or statistical methods:
+        lots of high-quality courses already cover these topics.
+    -   High-performance computing:
+        high throughput is more widely useful.
+    -   Symbolic debuggers:
+        awkward to use through the Jupyter Notebook, but will probably be included in the RStudio version of the course.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -207,13 +199,13 @@ The spreadsheet `scores.ods` contains scores for three cohorts of
 undergraduate students who have been taught using different
 techniques.  Reorganize this data into a single tidy sheet with:
 
-- variables in columns
-- observations in rows sorted by subject, property, and date (in that order)
-- a single value per cell
-- column headers that include the variable's name and units
-- empty cells for missing values
-- uniformly-formatted dates
-- a lookup table for categories based on performance
+-   variables in columns
+-   observations in rows sorted by subject, property, and date (in that order)
+-   a single value per cell
+-   column headers that include the variable's name and units
+-   empty cells for missing values
+-   uniformly-formatted dates
+-   a lookup table for categories based on performance
 
 Export the tidy data as a CSV file and compare it to
 `scores-solution.csv`.  Where does your interpretation of "tidy"
@@ -228,21 +220,21 @@ containing a randomly-generated ID that identifies a study subject.
 Write a Python program that reads these files and produces an index
 recording which subjects appear in which datasets:
 
-- The program should be called `person-file-index.py`.
-- It takes two arguments, both optional:
-  - The path to the folder containing the data files (default `.`).
-  - The name of the output file (if none is given, the program
-    writes the index to standard output).
-- If any CSV file in the specified folder does *not* have a single
-  column titled `person`, the program prints an error message to
-  standard error and exits without creating an output file or
-  printing anything to standard output.
-- The output must have exactly two columns titled `person` and `filename`.
-  - Each (`person`, `filename`) pair must be unique.
-  - The `person` value must be a string, even if the ID read from
-    the input was all digits.
-  - The `filename` value contain only the filename (not any folder
-    names).
+-   The program should be called `person-file-index.py`.
+-   It takes two arguments, both optional:
+    -   The path to the folder containing the data files (default `.`).
+    -   The name of the output file (if none is given, the program
+        writes the index to standard output).
+-   If any CSV file in the specified folder does *not* have a single
+    column titled `person`, the program prints an error message to
+    standard error and exits without creating an output file or
+    printing anything to standard output.
+-   The output must have exactly two columns titled `person` and `filename`.
+    -   Each (`person`, `filename`) pair must be unique.
+    -   The `person` value must be a string, even if the ID read from
+        the input was all digits.
+    -   The `filename` value contain only the filename (not any folder
+        names).
 
 ### Reorganize a Small Project
 
@@ -251,15 +243,11 @@ collected directly from laboratory equipment (as CSV files) and
 several plots generated from that data.  Reorganize that material so
 that it conforms to [Noble's Rules][noble].
 
-### Package that project's scripts using Pip.
-
 ### Clean up a set of inconsistently-formatted text data files using regular expressions.
 
 ### Fetch data from a website using a REST API.
 
-### Create and merge pull requests that have merge conflicts.
-
-### Extend a Makefile to download data, merge it into existing data, and regenerate reports.
+### Merge changes from a remote repository when there are conflicts.
 
 ### Write a program to pass a set of pre-written tests.
 
@@ -281,12 +269,12 @@ with tutors and peers available to help them when they get stuck.
 
 This outline is inspired by the "minimal manual" approach to instructional design [[Carr2014](#CITE)]:
 
-1. All learning tasks should be meaningful and self-contained activities.
-1. Learners should be given realistic projects as quickly as possible.
-1. Instruction should permit self-directed reasoning and improvising
-   by increasing the number of active learning activities.
-1. Training materials and activities should provide for error recognition and recovery.
-1. There should be a close linkage between the training and actual system.
+1.  All learning tasks should be meaningful and self-contained activities.
+1.  Learners should be given realistic projects as quickly as possible.
+1.  Instruction should permit self-directed reasoning and improvising
+    by increasing the number of active learning activities.
+1.  Training materials and activities should provide for error recognition and recovery.
+1.  There should be a close linkage between the training and actual system.
 
 The chapters now contain roughly 2/3 of what was in the original proposal.
 
@@ -305,20 +293,20 @@ either as the core of a one-semester for graduate or undergraduate course.
 
 Learners will need:
 
-- A personal computer with Internet access.
-- The Unix shell.
-- Python 3 (including the Jupyter Notebook).
-- Google Docs and GitHub accounts.
+-   A personal computer with Internet access.
+-   The Unix shell.
+-   Python 3 (including the Jupyter Notebook).
+-   Google Docs and GitHub accounts.
 
 ### Other Resources
 
-- [Software Carpentry][swc]
-- [Data Carpentry][dc]
-- [Data Carpentry for Biologists][dcb]
-- [Learn the tidyverse][tidyverse]
-- [[Wils2014](#CITE)]
-- [[Wils2017](#CITE)]
-- [[Tasc2017](#CITE)]
-- [Building a Research Software Commons][brsc]
+-   [Software Carpentry][swc]
+-   [Data Carpentry][dc]
+-   [Data Carpentry for Biologists][dcb]
+-   [Learn the tidyverse][tidyverse]
+-   [[Wils2014](#CITE)]
+-   [[Wils2017](#CITE)]
+-   [[Tasc2017](#CITE)]
+-   [Building a Research Software Commons][brsc]
 
 {% include links.md %}

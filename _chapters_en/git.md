@@ -27,25 +27,7 @@ keypoints:
 -   How can we view the history of a project?
 -   How can we compare files to previous versions of themselves?
 -   How can we write useful log messages?
-
-## Working with Branches
-
--   What is a branch?
--   When should we use branches?
--   How do we create branches?
--   How do we merge branches?
-
-## Handling Conflicts
-
--   What is a conflict?
--   How can we tell when a conflict has occurred?
--   How can we view a conflict?
--   How can we resolve conflicts?
-
-## Workflow
-
 -   How can we recover an old version of a file?
--   When should we commit work?
 
 ## Using Remote Repositories
 
@@ -54,6 +36,13 @@ keypoints:
 -   How can we get updates from a remote repository?
 -   How can we send updates to a remote repository?
 -   How can we control who can do what with a remote repository?
+
+## Handling Conflicts
+
+-   What is a conflict?
+-   How can we tell when a conflict has occurred?
+-   How can we view a conflict?
+-   How can we resolve conflicts?
 
 ## Sharing Work
 

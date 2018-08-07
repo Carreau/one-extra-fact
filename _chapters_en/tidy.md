@@ -12,6 +12,7 @@ keypoints:
 
 -   Why do researchers use spreadsheets?
 -   Why do some people believe we shouldn't use spreadsheets?
+-   Why are we using spreadsheets to teach tidy data?
 
 ## Tidy Data
 
