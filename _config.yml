@@ -1,17 +1,17 @@
 # Display.
-title: "Merely Useful"
+title: "One Extra Fact"
 subtitle: "A Pragmatic Introduction to Research Computing"
 author: "Greg Wilson"
 copyrightyear: "2018"
-repo: "https://github.com/gvwilson/merely-useful/"
+repo: "https://github.com/merely-useful/one-extra-fact/"
 email: "gvwilson@third-bit.com"
 isbn: "000-0-0000000-0"
-website: "https://gvwilson.github.io/merely-useful/"
+website: "https://merely-useful.github.io/one-extra-fact/"
 purchase: ""
 paypal: ""
 
 # Theme color.
-background: "#f0e0e0"
+background: "#f0faf0"
 
 # Jekyll settings.
 highlighter: rouge

@@ -98,7 +98,6 @@ This page holds material that *isn't* included in the course design.
     - How do we use variables?
     - What variables does the shell automatically create for us?
   - Writing Shell Scripts
-    - "Ninety percent of most magic merely consists of knowing one extra fact." - Terry Pratchett
     - How do we execute commands saved in a file?
     - How do we pass filenames into a script?
   - Repeating Things in the Shell

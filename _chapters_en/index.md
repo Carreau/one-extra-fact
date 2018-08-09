@@ -4,6 +4,10 @@ root: true
 redirect_from: "/"
 ---
 
+> Ninety percent of most magic merely consists of knowing one extra fact.
+>
+> -- Terry Pratchett
+
 These lessons are an introduction to research computing and data analysis
 for people with little or no previous training in either.
 All content can be re-used and re-mixed under a Creative Commons license ([s:license](#APPENDIX))
