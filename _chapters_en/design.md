@@ -99,7 +99,7 @@ data using more complicated statistical methods.
     -   Do numerical computing with NumPy.
     -   Do statistics with Pandas.
     -   Process text with regular expressions.
-    -   Create and publish a static website using GitHub Pages.
+    -   Create and publish a static website using Jekyll and GitHub Pages.
     -   Use ORCIDs and DOIs to identify authors, reports, and data.
 1.  What technologies, packages, or functions will learners use?
     -   Spreadsheets: same topics as the [Data Carpentry lesson][dc-sheets] using Google Sheets.
@@ -109,7 +109,7 @@ data using more complicated statistical methods.
         with extra material on writing command-line utilities.
     -   Pytest: new material.
     -   Git and GitHub: same topics as the [Software Carpentry lesson][swc-git] (split into separate lessons on tracking and collaborating).
-    -   Publishing: new material on [Markdown][markdown] and [GitHub Pages][github-pages].
+    -   Publishing: new material on [Markdown][markdown], [Jekyll][jekyll], and [GitHub Pages][github-pages].
 1.  What concepts will be introduced?
     -   Tidy data.
     -   Pipe and filter model.
@@ -141,9 +141,8 @@ data using more complicated statistical methods.
     -   Higher-order functions and object-oriented programming:
         there isn't time.
     -   LaTeX:
-        [Markdown][markdown] plus [Pelican][pelican] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
-        -   We use [Pelican][pelican] rather than [Jekyll][jekyll] because it's Python-based (we can build into `./docs` for publication).
-        -   And because it parallels the R course using [R Markdown][r-markdown].
+        [Markdown][markdown] plus [Jekyll][jekyll] are much simpler, and let us teach the same concepts (compiled, reproducible documents).
+        -   We use [Jekyll][jekyll] because it's what GitHub Pages' documentation talks about.
     -   Conditionals and functions in the shell:
         learners will use Python for anything that complex.
     -   Docker:
@@ -171,17 +170,17 @@ using "selection only" and "transparent background".
 
 <figure>
   <figcaption>Variables and Values</figcaption>
-  <img id="f:variables-values" src="../../files/design/variables-values.svg" alt="Variables and Values" />
+  <img id="f:variables-values" src="../../files/variables-values.svg" alt="Variables and Values" />
 </figure>
 
 <figure>
   <figcaption>Programs</figcaption>
-  <img id="f:programs" src="../../files/design/programs.svg" alt="Programs" />
+  <img id="f:programs" src="../../files/programs.svg" alt="Programs" />
 </figure>
 
 <figure>
   <figcaption>Projects</figcaption>
-  <img id="f:projects" src="../../files/design/projects.svg" alt="Projects" />
+  <img id="f:projects" src="../../files/projects.svg" alt="Projects" />
 </figure>
 
 <!-- -------------------------------------------------------------------------------- -->
