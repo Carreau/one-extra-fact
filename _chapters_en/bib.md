@@ -3,6 +3,8 @@ permalink: "/en/bib/"
 title: "Bibliography"
 ---
 
+**Carr2014**{:#Carr2014}: John Carroll: "Creating Minimalist Instruction". *International Journal of Designs for Learning*, 5(2), Nov 2014, <https://doi.org/10.14434/ijdl.v5i2.12887>. *A look back on the author's work on minimalist instruction.*
+
 **Dixo2018**{:#Dixo2018}: Dougal Dixon: *After Man: A Zoology of the Future*. Breakdown Press, 2018, <https://isbndb.com/book/9781911081012>. *A beautiful book that explains evolution and natural history through speculative zoology.  Not enough beetles, but otherwise perfect.*
 
 **Hadd2010**{:#Hadd2010}: Steven H. D. Haddock and Casey W. Dunn: *Practical Computing for Biologists*. Sinauer, 2010, <https://isbndb.com/book/9780878933914>. *A great introduction to practical computing skills for scientists of all kinds.*

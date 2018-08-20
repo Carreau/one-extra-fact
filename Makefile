@@ -9,7 +9,7 @@ LATEX=pdflatex
 BIBTEX=bibtex
 PANDOC=pandoc
 PANDOC_FLAGS=--from=markdown --to=latex
-REPO=http://github.com/gvwilson/merely-useful/
+REPO=FIXME
 
 # Language-dependent settings.
 DIR_MD=_chapters_${lang}
@@ -36,11 +36,11 @@ commands :
 	@grep -h -E '^##' Makefile | sed -e 's/## //g'
 
 ## serve       : run a local server.
-serve :
+serve : files/crossref.js
 	${JEKYLL} serve -I
 
 ## site        : build files but do not run a server.
-site :
+site : files/crossref.js
 	${JEKYLL} build
 
 ## single      : regenerate all-in-one version of book.
@@ -55,7 +55,7 @@ pdf : ${DIR_TEX}/book.pdf
 ## tex         : generate LaTeX for book, but don't compile to PDF.
 tex : ${CHAPTERS_TEX}
 
-${DIR_TEX}/book.pdf : ${ALL_TEX} ${BIB_SRC} files/crossref.js
+${DIR_TEX}/book.pdf : ${ALL_TEX} ${BIB_SRC}
 	@cd ${DIR_TEX} \
 	&& ${LATEX} book \
 	&& ${BIBTEX} book \
@@ -99,7 +99,7 @@ checkchars :
 	@bin/checkchars.py ${ALL_MD}
 
 ## checkcites  : list all missing bibliography entries.
-checkcites :
+checkcites : ${BIB_SRC} ${CHAPTERS_TEX}
 	@bin/checkcites.py --missing ${BIB_SRC} ${CHAPTERS_TEX}
 
 ## checkgloss  : check that all glossary entries are defined and used.
@@ -107,7 +107,7 @@ checkgloss :
 	@bin/checkgloss.py ${ALL_MD}
 
 ## checklabels : make sure all labels conform to standards.
-checklabels :
+checklabels : ${CHAPTERS_TEX}
 	@bin/checklabels.py ${CHAPTERS_TEX}
 
 ## checklinks  : check that all links in source Markdown resolve.
@@ -162,8 +162,6 @@ years :
 ## clean       : clean up junk files.
 clean :
 	@rm -rf _site ${CHAPTERS_TEX} */*.aux */*.bbl */*.blg */*.log */*.out */*.toc
-	@rm -rf ${DIR_TEX}/inc
-	@rm -rf bin/__pycache__
 	@find . -name .DS_Store -exec rm {} \;
 	@find . -name '*~' -exec rm {} \;
 

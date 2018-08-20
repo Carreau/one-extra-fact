@@ -11,47 +11,6 @@ purchase: ""
 paypal: ""
 organization: https://merely-useful.github.io/
 
-# Theme color.
-background: "#faf0f0"
-
-# Jekyll settings.
-highlighter: rouge
-plugins:
-  - "jekyll-redirect-from"
-
-# Things to ignore
-exclude:
-- BUILD.md
-- CITATION.md
-- CONDUCT.md
-- LICENSE.md
-- Makefile
-- README.md
-- bin
-- misc
-- requirements.txt
-- tex_en/inc
-
-# Markers in generated files.
-marker:
-  start: "<!-- main start -->"
-  end: "<!-- main end -->"
-  crossref: "let CROSSREF="
-
-# Collections: one for lessons and one for extras for each language suffix.
-collections:
-  chapters_en:
-    output: true
-
-# Set the language for various collections.
-defaults:
-  - scope:
-      path: ""
-      type: chapters_en
-    values:
-      language: "en"
-      layout: "default"
-
 # Order for Table of Contents.
 toc:
   lessons:
@@ -74,6 +33,48 @@ toc:
   - /citation/
   - /gloss/
   - /design/
+
+# Theme color.
+background: "#faf0f0"
+
+# Jekyll settings.
+highlighter: rouge
+plugins:
+  - "jekyll-redirect-from"
+
+# Things to ignore
+exclude:
+- BUILD.md
+- CITATION.md
+- CONDUCT.md
+- LICENSE.md
+- Makefile
+- README.md
+- bin
+- misc
+- requirements.txt
+- tex_en/inc
+- unused
+
+# Markers in generated files.
+marker:
+  start: "<!-- main start -->"
+  end: "<!-- main end -->"
+  crossref: "let CROSSREF="
+
+# Collections: one for lessons and one for extras for each language suffix.
+collections:
+  chapters_en:
+    output: true
+
+# Set the language for various collections.
+defaults:
+  - scope:
+      path: ""
+      type: chapters_en
+    values:
+      language: "en"
+      layout: "default"
 
 # Translations by language.
 translations:
