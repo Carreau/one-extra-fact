@@ -18,7 +18,7 @@ keypoints:
     -   Markdown plus Jekyll on GitHub
 -   Why does this have to be so difficult?
 
-## Managing Citations
+## Managing Citations {#s:publish-cite}
 
 -   What is an ORCID?
 -   What is a DOI?
@@ -26,7 +26,7 @@ keypoints:
 -   Why should we use a bibliography manager?
 -   How should we share our bibliography?
 
-## Introduction to HTML
+## Introduction to HTML {#s:publish-html}
 
 -   What is HTML?
 -   What are the basic elements of a web page?
@@ -34,19 +34,19 @@ keypoints:
 -   How can we publish web pages on GitHub?
 -   How can we include mathematics in web pages?
 
-## Markdown
+## Markdown {#s:publish-markdown}
 
 -   What is Markdown?
 -   What are some commonly-used features of Markdown?
 -   How can we translate Markdown into other formats for publication?
 
-## Introduction to Jekyll
+## Introduction to Jekyll {#s:publish-jekyll}
 
 -   What is a templating engine?
 -   How can we use the same layout for many pages?
 -   How can we publish a website on GitHub?
 
-## Blogging
+## Blogging {#s:publish-blog}
 
 -   What is RSS?
 -   How does blogging work?

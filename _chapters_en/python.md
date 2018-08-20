@@ -11,7 +11,7 @@ keypoints:
 -   Why Python?
 -   How do we create and use variables in Python?
 
-## Line-Oriented File I/O
+## Line-Oriented File I/O {#s:python-io}
 
 -   How do we open, read, and close files in Python?
 -   How do we write a loop in Python?
@@ -20,12 +20,12 @@ keypoints:
 -   What methods do strings have?
 -   How can we use string methods to process text files?
 
-## Conditionals
+## Conditionals {#s:python-conditional}
 
 -   What is an `if` statement?
 -   What are `else` and `elif` statements?
 
-## Lists
+## Lists {#s:python-list}
 
 -   What is a list?
 -   How do we create a list?
@@ -34,25 +34,25 @@ keypoints:
 -   How do we loop over the elements of a list?
 -   How do we loop over a range of numbers?
 
-## Libraries
+## Libraries {#s:python-lib}
 
 -   What is a library?
 -   How do we use a library?
 -   What are some commonly-used Python libraries?
 
-## Errors
+## Errors {#s:python-error}
 
 -   What is the difference between a syntax error and a runtime error?
 -   How can we make sense of Python's error reports?
 -   How can we catch errors?
 -   What should we do when we catch errors?
 
-## Getting Help
+## Getting Help {#s:python-help}
 
 -   Where can we look for help when errors occur?
 -   How can we ask questions to elicit helpful responses?
 
-## Functions
+## Functions {#s:python-func}
 
 -   When should we create a function?
 -   What's the difference between defining a function and calling it?
@@ -63,7 +63,7 @@ keypoints:
 -   When are parameters created?
 -   When are parameters destroyed?
 
-## Writing Readable Software
+## Writing Readable Software {#s:python-readable}
 
 -   What should we call the variables and functions we create?
 -   How can we document functions?

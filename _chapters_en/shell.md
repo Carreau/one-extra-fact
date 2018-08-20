@@ -11,7 +11,7 @@ keypoints:
 -   What is the difference between an operating system and a shell?
 -   Why would I use the shell?
 
-## Working With Files
+## Working With Files {#s:shell-files}
 
 -   How do we see what's in a folder?
 -   How do we move around in the shell?
@@ -21,7 +21,7 @@ keypoints:
 -   How do we rename a file?
 -   How do we delete a file?
 
-## Editing Text Files
+## Editing Text Files {#s:shell-edit}
 
 -   What's the difference between a text file and a binary file?
 -   How do we run a text editor?
@@ -29,42 +29,42 @@ keypoints:
 -   How do we move around in a text editor?
 -   How do we find and replace in a text editor?
 
-## Operating on Text
+## Operating on Text {#s:shell-text}
 
 -   How do we find out how long a file is?
 -   How do we select the top or bottom of a file?
 -   How do we save the output of a command in a file?
 -   How do we select columns of text?
 
-## Paths
+## Paths {#s:shell-path}
 
 -   What is an absolute path?
 -   What is a relative path?
 -   What special paths does the shell understand?
 
-## Shortcuts
+## Shortcuts {#s:shell-shortcut}
 
 -   How do we see what I've done?
 -   How do we use tab completion to fill in filenames?
 -   How do we repeat previous commands?
 
-## Pipes
+## Pipes {#s:shell-pipe}
 
 -   How do we combine two or more commands?
 
-## Variables
+## Variables {#s:shell-var}
 
 -   What is a variable?
 -   How do we create variables?
 -   How do we use variables?
 -   What variables does the shell automatically create for us?
 
-## Writing Shell Scripts
+## Writing Shell Scripts {#s:shell-script}
 
 -   How do we execute commands saved in a file?
 -   How do we pass filenames into a script?
 
-## Repeating Things in the Shell
+## Repeating Things in the Shell {#s:shell-loop}
 
 -   What is a loop?
 -   How do we write a loop in a shell script?

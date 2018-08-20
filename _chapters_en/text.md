@@ -12,12 +12,12 @@ keypoints:
 -   What are regular expressions?
 -   Why are they called "regular expressions"?
 
-## Basic Operations
+## Basic Operations {#s:text-basic}
 
 -   What basic patterns can regular expressions match?
 -   How can we extract the parts of text that a regular expression matches?
 
-## Common Patterns
+## Common Patterns {#s:text-pattern}
 
 -   How can I match postal codes?
 -   How can I match dates?
@@ -25,12 +25,12 @@ keypoints:
 -   How can I extract information from web pages?
 -   What *can't* be processed with regular expressions?
 
-## Programming with Regular Expressions
+## Programming with Regular Expressions {#s:text-prog}
 
 -   How can we use regular expressions in R?
 -   How can we use regular expressions in the Unix shell?
 
-## Larger Patterns
+## Larger Patterns {#s:text-larger}
 
 -   How can I process records that satisfy some condition?
 -   How can I process records of many different types?

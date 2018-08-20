@@ -11,33 +11,33 @@ keypoints:
 -   What is a dataframe?
 -   What makes dataframes different from matrices?
 
-## Dictionaries
+## Dictionaries {#s:pandas-dict}
 
 -   What is a dictionary?
 -   What are dictionaries good for?
 -   Why can't lists be used as dictionary keys?
 
-## Reading, Writing, and Displaying Data
+## Reading, Writing, and Displaying Data {#s:pandas-io}
 
 -   How can we read data into a dataframe?
 -   How can we save dataframes to files?
 
-## Working with Dataframes
+## Working with Dataframes {#s:pandas-dataframe}
 
 -   What properties do dataframes have?
 -   What methods do dataframes have?
 -   How can we select individual rows and columns from dataframes?
 -   How can we create simple visualizations of dataframes?
 
-## Selecting Data from a Dataframe
+## Selecting Data from a Dataframe {#s:pandas-select}
 
 -   How can we select subsets of data from dataframes?
 
-## Grouping Data
+## Grouping Data {#s:pandas-group}
 
 -   How can we operate on subsets of data from dataframes?
 
-## Cleaning Up Data
+## Cleaning Up Data {#s:pandas-tidy}
 
 -   What is tidy data?
 -   How can we create tidy data?

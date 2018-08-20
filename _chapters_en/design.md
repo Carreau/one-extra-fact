@@ -13,9 +13,9 @@ but *isn't* being included in the course.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 1: Who is this course for?
+## Step 1: Who is this course for? {#s:design-who}
 
-### Bhadra
+**Bhadra**
 
 Bhadra received a B.Sc. in biochemistry five years ago, and has worked
 since then for a small biotech firm.  She did a biostatistics course
@@ -33,7 +33,7 @@ additions and changes don't break existing features, and how to
 package her software so that her colleagues can install it and run it
 themselves.
 
-### Jorge
+**Jorge**
 
 Jorge just moved from Costa Rica to Canada to study agricultural
 economics.  Other than using Excel, Word, and the Internet, Jorge's
@@ -52,7 +52,7 @@ This course will teach Jorge how to manage the code and data used in a
 small research software project, how to fetch and process text, CSV,
 and JSON data, and how to create simple exploratory visualizations.
 
-### Mei
+**Mei**
 
 Mei is a graduate student in chemistry. Her only programming
 experience is a general first-year introduction to computational
@@ -76,7 +76,7 @@ data using more complicated statistical methods.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 2: Brainstorming
+## Step 2: Brainstorming {#s:design-brainstorming}
 
 1.  What questions will this course answer?
     -   How can I manage data, code, and reports?
@@ -162,7 +162,7 @@ data using more complicated statistical methods.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 3: What mental models will learners form?
+## Step 3: What Mental Models Will Learners Form? {#s:design-models}
 
 These concept maps were drawn with the desktop edition of [draw.io][draw-io].
 To modify them, edit the XML, then select all and export as SVG
@@ -170,29 +170,29 @@ using "selection only" and "transparent background".
 
 <figure>
   <figcaption>Variables and Values</figcaption>
-  <img id="f:variables-values" src="../../files/variables-values.svg" alt="Variables and Values" />
+  <img id="f:design-variables-values" src="../../files/variables-values.svg" alt="Variables and Values" />
 </figure>
 
 <figure>
   <figcaption>Programs</figcaption>
-  <img id="f:programs" src="../../files/programs.svg" alt="Programs" />
+  <img id="f:design-programs" src="../../files/programs.svg" alt="Programs" />
 </figure>
 
 <figure>
   <figcaption>Projects</figcaption>
-  <img id="f:projects" src="../../files/projects.svg" alt="Projects" />
+  <img id="f:design-projects" src="../../files/projects.svg" alt="Projects" />
 </figure>
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 4: What will learners do along the way?
+## Step 4: What Will Learners Do Along the Way? {#s:design-exercises}
 
 *Another dozen exercise ideas will be added to this list before course
 development starts, and all of them expanded to full text with
 accompanying solutions to show how far learners will get by the end of
 each lesson.*
 
-### Reorganize Messy Data
+**Reorganize Messy Data**
 
 The spreadsheet `scores.ods` contains scores for three cohorts of
 undergraduate students who have been taught using different
@@ -211,7 +211,7 @@ Export the tidy data as a CSV file and compare it to
 differ from the sample solution's?  Are any of these differences
 important?
 
-### Index a Dataset
+**Index a Dataset**
 
 The folder `scores` contains several dozen tidy datasets, each
 formatted as a CSV file.  Each file has a column titled `person`
@@ -235,26 +235,36 @@ recording which subjects appear in which datasets:
     -   The `filename` value contain only the filename (not any folder
         names).
 
-### Reorganize a Small Project
+**Reorganize a Small Project**
 
 The folder `thesis` contains shell scripts, Python programs, data
 collected directly from laboratory equipment (as CSV files) and
 several plots generated from that data.  Reorganize that material so
 that it conforms to [Noble's Rules][noble].
 
-### Clean up a set of inconsistently-formatted text data files using regular expressions.
+**Clean up a set of inconsistently-formatted text data files using regular expressions.**
 
-### Fetch data from a website using a REST API.
+FIXME
 
-### Merge changes from a remote repository when there are conflicts.
+**Fetch data from a website using a REST API.**
 
-### Write a program to pass a set of pre-written tests.
+FIXME
 
-### Publish a single-page website for a project on GitHub.
+**Merge changes from a remote repository when there are conflicts.**
+
+FIXME
+
+**Write a program to pass a set of pre-written tests.**
+
+FIXME
+
+**Publish a single-page website for a project on GitHub.**
+
+FIXME
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 5: How are the concepts connected?
+## Step 5: How Are the Concepts Connected? {#s:design-order}
 
 The initial outline in `misc/course-outline.md`
 is structured in hour-long blocks with three topics per hour.
@@ -279,16 +289,16 @@ The chapters now contain roughly 2/3 of what was in the original proposal.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 6: Course overview
+## Step 6: Course Overview {#s:design-overview}
 
-### Course Description
+**Course Description**
 
 This course is an introduction to research computing and data analysis
 for people with little or no previous training in either.
 It can be used for self-study by people who are thinking about becoming data scientists
 either as the core of a one-semester for graduate or undergraduate course.
 
-### Prerequisites
+**Prerequisites**
 
 Learners will need:
 
@@ -297,7 +307,7 @@ Learners will need:
 -   Python 3 (including the Jupyter Notebook).
 -   Google Docs and GitHub accounts.
 
-### Other Resources
+**Other Resources**
 
 -   [Software Carpentry][swc]
 -   [Data Carpentry][dc]

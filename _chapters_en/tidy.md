@@ -14,7 +14,7 @@ keypoints:
 -   Why do some people believe we shouldn't use spreadsheets?
 -   Why are we using spreadsheets to teach tidy data?
 
-## Tidy Data
+## Tidy Data {#s:tidy-data}
 
 -   What is tidy data?
 -   What makes tidy data easier to work with than untidy data?
@@ -23,25 +23,25 @@ keypoints:
 -   What is the difference between numbers and text?
 -   What is an atomic value?
 
-## Making Values Explicit
+## Making Values Explicit {#s:tidy-explicit}
 
 -   How can we use formulas to calculate new values in a spreadsheet?
 -   Why should all values in a spreadsheet be explicit?
 -   How can we debug dependencies in a spreadsheet?
 
-## Using Formulas
+## Using Formulas {#s:tidy-formulas}
 
 -   How can we calculate sums and running totals?
 -   How can we filter data using conditional expressions?
 -   How can we use named ranges to make formulas more robust?
 -   How can we use lookup tables to calculate derived values?
 
-## Quality Control
+## Quality Control {#s:tidy-quality}
 
 -   What mistakes do people commonly make in spreadsheets?
 -   How can we check for them?
 
-## Exporting Data
+## Exporting Data {#s:tidy-export}
 
 -   How can we export data from a spreadsheet?
 -   What is lost when we export data from a spreadsheet?

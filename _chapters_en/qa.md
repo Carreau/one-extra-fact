@@ -12,24 +12,24 @@ keypoints:
 -   Why is it worth doing anyway?
 -   How much testing is enough?
 
-## Writing Unit Tests
+## Writing Unit Tests {#s:qa-unit}
 
 -   What is a unit test?
 -   What outcomes can a unit test have?
 -   How can we write unit tests?
 -   How can we run unit tests?
 
-## Testing Floating Point Calculations
+## Testing Floating Point Calculations {#s:qa-float}
 
 -   Why are floating point calculations hard to test?
 -   How should we write tests for floating point calculations?
 
-## Choosing Tests
+## Choosing Tests {#s:qa-choose}
 
 -   What unit tests should we write?
 -   When should we write our unit tests?
 
-## Debugging
+## Debugging {#s:qa-debug}
 
 -   How can we use the experimental method to find and fix bugs?
 

@@ -15,21 +15,21 @@ keypoints:
 -   What should be stored in a version control repository?
 -   What *shouldn't* be stored in a repository?
 
-## Getting Started
+## Getting Started {#s:git-start}
 
 -   How can we configure version control on a new machine?
 -   How can we create a repository?
 -   How can we record changes to a set of files?
 -   How can we ignore files we don't want to track?
 
-## Viewing History
+## Viewing History {#s:git-history}
 
 -   How can we view the history of a project?
 -   How can we compare files to previous versions of themselves?
 -   How can we write useful log messages?
 -   How can we recover an old version of a file?
 
-## Using Remote Repositories
+## Using Remote Repositories {#s:git-remote}
 
 -   What is a remote repository?
 -   How can we create a remote repository?
@@ -37,14 +37,14 @@ keypoints:
 -   How can we send updates to a remote repository?
 -   How can we control who can do what with a remote repository?
 
-## Handling Conflicts
+## Handling Conflicts {#s:git-conflict}
 
 -   What is a conflict?
 -   How can we tell when a conflict has occurred?
 -   How can we view a conflict?
 -   How can we resolve conflicts?
 
-## Sharing Work
+## Sharing Work {#s:git-collab}
 
 -   What is a pull request?
 -   How can we create a pull request?
