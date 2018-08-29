@@ -35,6 +35,6 @@ Questions, suggestions, and corrections are very welcome:
 please file an issue in our [GitHub repository]({{site.repo}})
 or [email the author directly](mailto:{{site.email}}).
 Please note that all contributors are required to abide by
-our code of conduct ((s:joining)[#APPENDIX]).
+our code of conduct ([s:joining](#APPENDIX)).
 
 {% include links.md %}
